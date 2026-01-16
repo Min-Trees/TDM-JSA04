@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/search-popup.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header_left">
+            <a href="main.html"><img src="assest/icons/logo.png" alt="Logo" width="80" height="90"></a>
+        </div>
+
+        <div class="header_center">
+            <nav class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="main.html" class="nav_link">Trang chủ</a></li>
+                    <li class="nav_item"><a href="main.html" class="nav_link">Kẹo</a></li>
+                    <li class="nav_item"><a href="main_b.html" class="nav_link">Bánh</a></li>
+                    <li class="nav_item"><a href="main_n.html" class="nav_link">Nước ngọt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <img src="assest/icons/find.png" alt="Tìm kiếm" width="40" height="40" class="icon">
+            <img src="assest/icons/user.png" alt="Tài khoản" width="40" height="40" class="icon">
+            <div class="cart-icon-wrapper">
+                <img src="assest/icons/cart.png" alt="Giỏ hàng" width="40" height="40" class="icon" id="cartIcon">
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="main.html">Trang chủ</a>
+            <span class="separator">›</span>
+            <span>Giỏ hàng</span>
+        </div>
+
+        <!-- Page Title -->
+        <h1 class="page-title">🛒 Giỏ hàng của bạn</h1>
+
+        <!-- Empty Cart Message -->
+        <div class="empty-cart" id="emptyCart" style="display: none;">
+            <div class="empty-cart-icon">🛒</div>
+            <h2>Giỏ hàng trống</h2>
+            <p>Bạn chưa có sản phẩm nào trong giỏ hàng</p>
+            <a href="main.html" class="btn-shop-now">Mua sắm ngay</a>
+        </div>
+
+        <!-- Cart Content -->
+        <div class="cart-content" id="cartContent" style="display: none;">
+            <!-- Cart Items Section -->
+            <div class="cart-items-section">
+                <div class="section-header">
+                    <h2>Sản phẩm</h2>
+                    <button class="btn-clear-cart" id="clearCartBtn">
+                        <span>🗑️</span> Xóa tất cả
+                    </button>
+                </div>
+
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items sẽ được tạo bằng JS -->
+                </div>
+            </div>
+
+            <!-- Cart Summary Section -->
+            <div class="cart-summary">
+                <h2>Tóm tắt đơn hàng</h2>
+
+                <div class="summary-row">
+                    <span>Tạm tính:</span>
+                    <span id="subtotal">0đ</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Phí vận chuyển:</span>
+                    <span id="shipping">0đ</span>
+                </div>
+
+                <div class="summary-row discount">
+                    <span>Giảm giá:</span>
+                    <span id="discount">0đ</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row total">
+                    <span>Tổng cộng:</span>
+                    <span id="total">0đ</span>
+                </div>
+
+                <!-- Coupon Section -->
+                <div class="coupon-section">
+                    <input type="text" class="coupon-input" id="couponInput" placeholder="Mã giảm giá">
+                    <button class="btn-apply-coupon" id="applyCouponBtn">Áp dụng</button>
+                </div>
+
+                <div class="coupon-message" id="couponMessage"></div>
+
+                <!-- Action Buttons -->
+                <button class="btn-checkout" id="checkoutBtn">
+                    Thanh toán
+                </button>
+
+                <a href="main.html" class="btn-continue-shopping">
+                    ← Tiếp tục mua sắm
+                </a>
+
+                <!-- Payment Methods -->
+                <div class="payment-methods">
+                    <p>Chấp nhận thanh toán:</p>
+                    <div class="payment-icons">
+                        <span>💳</span>
+                        <span>🏦</span>
+                        <span>📱</span>
+                        <span>💵</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-contain">
+            <h3>Contact me</h3>
+            <p>Phone: 0962788079</p>
+            <p>Email: lttanh3709@gmail.com</p>
+            <p>Address: Thuận An, Bình Dương</p>
+        </div>
+        <div class="footer-contain">
+            <h3>Navigation</h3>
+            <a href="main.html">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+        </div>
+        <div class="footer-contain">
+            <h3>Follow us</h3>
+            <a href="https://www.instagram.com/_ltta.dino_/">
+                <img src="assest/icons/ig.png" alt="Instagram">Instagram
+            </a>
+            <a href="https://www.facebook.com/lttt.dino">
+                <img src="assest/icons/fb.png" alt="Facebook">Facebook
+            </a>
+            <a href="https://www.tiktok.com/@ltta.wxz">
+                <img src="assest/icons/tik.png" alt="Tik Tok">Tik Tok
+            </a>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon" id="toastIcon">✓</span>
+        <span class="toast-message" id="toastMessage">Thông báo</span>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmModal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Xác nhận</h3>
+            <p id="modalMessage">Bạn có chắc chắn?</p>
+            <div class="modal-buttons">
+                <button class="btn-cancel" id="modalCancel">Hủy</button>
+                <button class="btn-confirm" id="modalConfirm">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/search-popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Trị - MShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="app" style="min-height: 100vh; display: flex; flex-direction: column;">
+        <div class="header">
+            <div class="nav">
+                <div class="logo">
+                    <h2>🛡️ MShop Admin</h2>
+                </div>
+                <div class="admin-info">
+                    <span class="admin-badge">Administrator</span>
+                    <span class="admin-email">admin123@gmail.com</span>
+                </div>
+                <div class="menu">
+                    <ul class="nav_item">
+                        <a href="mainkamenrider.html" title="Trang chủ">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            Trang chủ
+                        </a>
+                        <li><button id="logoutBtn" class="logout-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                <polyline points="16 17 21 12 16 7"></polyline>
+                                <line x1="21" y1="12" x2="9" y2="12"></line>
+                            </svg>
+                            Đăng xuất
+                        </button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-container" style="flex: 1;">
+            <div class="admin-sidebar">
+                <div class="sidebar-header">
+                    <h3>📋 Menu Quản Trị</h3>
+                </div>
+                <ul class="admin-menu">
+                    <li class="active" data-tab="products">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        Quản lý sản phẩm
+                    </li>
+                    <li data-tab="orders">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Giỏ hàng hiện tại
+                    </li>
+                </ul>
+                
+                <div class="sidebar-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-info">
+                            <div class="stat-label">Tổng sản phẩm</div>
+                            <div class="stat-value" id="totalProducts">0</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🛒</div>
+                        <div class="stat-info">
+                            <div class="stat-label">Trong giỏ hàng</div>
+                            <div class="stat-value" id="totalOrders">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-content">
+                <!-- Tab Quản lý sản phẩm -->
+                <div class="tab-content active" id="products-tab">
+                    <div class="admin-header">
+                        <div>
+                            <h2>📦 Quản Lý Sản Phẩm</h2>
+                            <p class="header-subtitle">Thêm, sửa, xóa sản phẩm trong cửa hàng</p>
+                        </div>
+                        <div class="header-actions">
+                            <button class="btn-add" id="addProductBtn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Thêm Sản Phẩm
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm theo tên...">
+                        <button id="clearSearch" class="clear-search" style="display: none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="category-filter">
+                        <button class="filter-btn active" data-category="all">Tất cả</button>
+                        <button class="filter-btn" data-category="kamenrider">Kamen Rider</button>
+                        <button class="filter-btn" data-category="beyblade">Beyblade</button>
+                        <button class="filter-btn" data-category="ninjago">Ninjago</button>
+                    </div>
+
+                    <!-- Form thêm/sửa sản phẩm -->
+                    <div class="product-form" id="productForm" style="display: none;">
+                        <div class="form-header">
+                            <h3 id="formTitle">✨ Thêm Sản Phẩm Mới</h3>
+                            <button class="btn-close" id="cancelBtn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        <form id="productFormElement">
+                            <input type="hidden" id="productId">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        </svg>
+                                        Tên sản phẩm
+                                    </label>
+                                    <input type="text" id="productName" placeholder="Nhập tên sản phẩm" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg>
+                                        Giá (VNĐ)
+                                    </label>
+                                    <input type="number" id="productPrice" placeholder="Nhập giá" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        Danh mục
+                                    </label>
+                                    <select id="productCategory" required>
+                                        <option value="">Chọn danh mục</option>
+                                        <optgroup label="Kamen Rider" data-group="kamenrider">
+                                            <option value="kamenrider-geats">🦸 Kamen Rider Geats</option>
+                                            <option value="kamenrider-gotchard">🦸 Kamen Rider Gotchard</option>
+                                        </optgroup>
+                                        <optgroup label="Beyblade" data-group="beyblade">
+                                            <option value="beyblade-burst">🌀 Beyblade Burst</option>
+                                            <option value="beyblade-x">🌀 Beyblade X</option>
+                                        </optgroup>
+                                        <optgroup label="Ninjago" data-group="ninjago">
+                                            <option value="ninjago-mos">🥷 Ninjago Master of Spinjitsu</option>
+                                            <option value="ninjago-dr">🥷 Ninjago Dragon Rising</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        Hình ảnh <span style="color: #999; font-weight: normal;">(Không bắt buộc)</span>
+                                    </label>
+                                    <input type="text" id="productImage" placeholder="Nhập đường dẫn hình ảnh hoặc chọn từ file">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    Mô tả sản phẩm <span style="color: #999; font-weight: normal;">(Không bắt buộc)</span>
+                                </label>
+                                <textarea id="productDescription" rows="3" placeholder="Nhập mô tả chi tiết về sản phẩm hoặc để trống"></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-save">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Lưu Sản Phẩm
+                                </button>
+                                <button type="button" class="btn-cancel" id="cancelBtn2">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                    Hủy Bỏ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Danh sách sản phẩm -->
+                    <div class="products-list">
+                        <div class="products-by-category">
+                            <!-- Kamen Rider Section -->
+                            <div class="category-section" data-category="kamenrider">
+                                <h3 class="category-title">🦸 Kamen Rider</h3>
+                                <div class="table-wrapper">
+                                    <table class="products-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 80px;">Hình ảnh</th>
+                                                <th style="width: 30%;">Tên sản phẩm</th>
+                                                <th style="width: 15%;">Giá</th>
+                                                <th style="width: 15%;">Danh mục</th>
+                                                <th style="width: 25%;">Mô tả</th>
+                                                <th style="width: 140px;">Thao tác</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="kamenriderTableBody">
+                                            <tr><td colspan="6" class="empty-message">Đang tải...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Beyblade Section -->
+                            <div class="category-section" data-category="beyblade">
+                                <h3 class="category-title">🌀 Beyblade</h3>
+                                <div class="table-wrapper">
+                                    <table class="products-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 80px;">Hình ảnh</th>
+                                                <th style="width: 30%;">Tên sản phẩm</th>
+                                                <th style="width: 15%;">Giá</th>
+                                                <th style="width: 15%;">Danh mục</th>
+                                                <th style="width: 25%;">Mô tả</th>
+                                                <th style="width: 140px;">Thao tác</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="beybladeTableBody">
+                                            <tr><td colspan="6" class="empty-message">Đang tải...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Ninjago Section -->
+                            <div class="category-section" data-category="ninjago">
+                                <h3 class="category-title">🥷 Ninjago</h3>
+                                <div class="table-wrapper">
+                                    <table class="products-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 80px;">Hình ảnh</th>
+                                                <th style="width: 30%;">Tên sản phẩm</th>
+                                                <th style="width: 15%;">Giá</th>
+                                                <th style="width: 15%;">Danh mục</th>
+                                                <th style="width: 25%;">Mô tả</th>
+                                                <th style="width: 140px;">Thao tác</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ninjagoTableBody">
+                                            <tr><td colspan="6" class="empty-message">Đang tải...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Đơn hàng -->
+                <div class="tab-content" id="orders-tab">
+                    <div class="admin-header">
+                        <div>
+                            <h2>🛒 Giỏ Hàng Hiện Tại</h2>
+                            <p class="header-subtitle">Xem các sản phẩm trong giỏ hàng</p>
+                        </div>
+                    </div>
+
+                    <div class="orders-list">
+                        <div class="table-wrapper">
+                            <table class="orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Mã</th>
+                                        <th>Ngày thêm</th>
+                                        <th>Sản phẩm</th>
+                                        <th>Số lượng</th>
+                                        <th>Tổng tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ordersTableBody">
+                                    <tr><td colspan="5" class="empty-message">Đang tải...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Về MShop</h3>
+                <p>Chuyên cung cấp mô hình & đồ chơi chính hãng: Beyblade, Kamen Rider, Ultraman, Super Sentai.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Giỏ hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Liên hệ</h3>
+                <p>Email: nguyenbanhatnam1103@gmail.com</p>
+                <p>Hotline: 0862 999 709</p>
+                <p>Địa chỉ: Thủ Dầu Một, Bình Dương</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 MShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Thêm event listener cho cancelBtn2
+        document.getElementById('cancelBtn2').addEventListener('click', function() {
+            document.getElementById('productForm').style.display = 'none';
+            document.getElementById('productFormElement').reset();
+        });
+        
+        // Update stats
+        function updateStats() {
+            const products = JSON.parse(localStorage.getItem('allProducts') || '[]');
+            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            
+            document.getElementById('totalProducts').textContent = products.length;
+            document.getElementById('totalOrders').textContent = cart.length;
+        }
+        
+        // Call updateStats after loading
+        setTimeout(updateStats, 500);
+    </script>
+    <script src="admin.js"></script>
+</body>
+</html>

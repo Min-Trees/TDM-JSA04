@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-SCHOOL - Chi tiết lớp học</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <div class="header">Chi tiết Lớp học</div>
+
+        <!-- Body -->
+        <div class="app-body">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul class="sidebar-group">
+                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="hocsinh.html">Học sinh</a></li>
+                    <li><a href="giaovien.html">Giáo viên</a></li>
+                    <li><a href="lophoc.html" class="active">Lớp học</a></li>
+                    <li><a href="caidat.html">Cài đặt</a></li>
+                    <li><a href="dangnhap.html">Đăng Xuất</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Back Button -->
+                <button id="btn-back" class="btn-back">
+                    <span>←</span> Quay lại
+                </button>
+
+                <!-- Class Info Section -->
+                <div class="class-detail-section">
+                    <div class="class-header">
+                        <div class="class-badge" id="class-badge">6A1</div>
+                        <h2 id="class-name">Lớp 6A1</h2>
+                    </div>
+
+                    <div class="class-info-grid">
+                        <div class="info-card">
+                            <div class="info-content">
+                                <div class="info-label">Giáo viên chủ nhiệm</div>
+                                <div class="info-value" id="teacher-name">Đang tải...</div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-content">
+                                <div class="info-label">Sĩ số</div>
+                                <div class="info-value" id="class-size">0</div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-content">
+                                <div class="info-label">Có mặt</div>
+                                <div class="info-value present" id="present-count">0</div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-content">
+                                <div class="info-label">Vắng mặt</div>
+                                <div class="info-value absent" id="absent-count">0</div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-content">
+                                <div class="info-label">Năm học</div>
+                                <div class="info-value" id="school-year">2024-2025</div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-content">
+                                <div class="info-label">Chương trình đào tạo</div>
+                                <div class="info-value" id="curriculum">Chương trình GDPT 2018</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Students List Section -->
+                <div class="table-section">
+                    <h3>Danh sách học sinh</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>Giới tính</th>
+                                <th>Ngày sinh</th>
+                                <th>SĐT</th>
+                                <th>Mã HS</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody id="students-list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

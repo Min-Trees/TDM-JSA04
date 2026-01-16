@@ -1,0 +1,111 @@
+{
+  "mos": [
+    {
+      "id": 1,
+      "name": "LEGO Ninjago Kai's Ninja Race Car EVO 71780",
+      "price": "350.000",
+      "images": [
+        "images/Ninjago/71780.png",
+        "images/Ninjago/71780_alt1.png",
+        "images/Ninjago/71780_alt2.png",
+        "images/Ninjago/71780_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/71780.png",
+      "description": "Chiếc xe lửa siêu ngầu của Kai trong bộ LEGO Ninjago này có thiết kế hiện đại với các chi tiết màu đỏ và đen."
+    },
+    {     
+      "id": 2,
+      "name": "LEGO Ninjago Lloyd's Spinjitzu Ninja Training 70689",
+      "price": "350.000",
+      "images": [
+        "images/Ninjago/70689.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt3.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/70689.png",
+      "description": "Bộ LEGO Ninjago này cho phép bạn xây dựng khu vực huấn luyện ninja với nhiều thử thách."
+    },
+    {     
+      "id": 3,
+      "name": "LEGO Ninjago Spinjitzu Lloyd vs. Garmadon 70664",
+      "price": "500.000",
+      "images": [
+        "images/Ninjago/70664.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/70664.png",
+      "description": "Set LEGO Ninjago với đầy đủ 2 con quay cùng với vô vàn phụ kiện, có thể cho bé sáng tạo cùng nhiều chế độ con quay khác nhau."
+    },
+    {     
+      "id": 4,
+      "name": "LEGO Ninjago Jay - Spinjitzu Master 70635",
+      "price": "350.000",
+      "images": [
+        "images/Ninjago/70635.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/70635.png",
+      "description": "Bộ LEGO Ninjago vừa cho bé lắp ráp vừa cho bé trải nghiệm một con quay bằng LEGO siêu độc đáo cùng với nhân vật Jay siêu ngầu."
+    }
+  ],
+
+  "dr": [
+    {     
+      "id": 5,
+      "name": "LEGO Ninjago Cole's Elemental Earth Mech 71806",
+      "price": "350.000",
+      "images": [
+        "images/Ninjago/71806.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/71806.png",
+      "description": "Bộ LEGO Ninjago chiến giáp đất siêu ngầu, phù hợp với mọi lứa tuổi."
+    },
+    {     
+      "id": 6,
+      "name": "LEGO Ninjago Rogue's Mech Dragon Rider 71843",
+      "price": "1.299.000",
+      "images": [
+        "images/Ninjago/71843.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/71843.png",
+      "description": "Một bộ LEGO Ninjago lớn, lắp ráp siêu đã và có giá trị trưng bày rất cao."
+    },
+    {     
+      "id": 7,
+      "name": "LEGO Ninjago Kai's Rising Dragon Strike 71801",
+      "price": "299.000",
+      "images": [
+        "images/Ninjago/71801.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/71801.png",
+      "description": "Một bộ LEGO Ninjago lớn, lắp ráp siêu đã và có giá trị trưng bày rất cao."
+    },
+    {     
+      "id": 8,
+      "name": "LEGO Ninjago Dragon Spinjitzu Battle Pack 71826",
+      "price": "599.000",
+      "images": [
+        "images/Ninjago/71826.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Ninjago/71826.png",
+      "description": "Một bộ LEGO Ninjago bao gồm 2 con quay thế hệ mới cùng với ngôi đền và một vật phẩm nâng cấp vàng cho con quay."
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/review.css">
+
+</head>
+
+<body>
+    <!-- HEADER - Giống y hệt trang main.html -->
+    <header class="header">
+        <div class="header_left">
+            <a href="main.html"><img src="assest/icons/logo.png" alt="Logo" width="80" height="90"></a>
+        </div>
+
+        <div class="header_center">
+            <nav class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="main.html" class="nav_link">Trang chủ</a></li>
+                    <li class="nav_item"><a href="main.html" class="nav_link">Kẹo</a></li>
+                    <li class="nav_item"><a href="main_b.html" class="nav_link">Bánh</a></li>
+                    <li class="nav_item"><a href="main_n.html" class="nav_link">Nước ngọt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <img src="assest/icons/find.png" alt="Tìm kiếm" width="40" height="40" class="icon">
+            <img src="assest/icons/user.png" alt="Tài khoản" width="40" height="40" class="icon">
+            <div class="cart-icon-wrapper">
+                <a href="cart.html">
+                    <img src="assest/icons/cart.png" alt="Giỏ hàng" width="40" height="40" class="icon" id="cartIcon">
+                </a>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTAINER CHI TIẾT SẢN PHẨM -->
+    <div class="container">
+        <!-- Breadcrumb - Đường dẫn điều hướng -->
+        <div class="breadcrumb">
+            <a href="main.html">Trang chủ</a>
+            <span class="separator">›</span>
+            <a href="main.html">Kẹo</a>
+            <span class="separator">›</span>
+            <span id="breadcrumbProduct">Chi tiết sản phẩm</span>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading">
+            <div class="loader"></div>
+            <p>Đang tải sản phẩm...</p>
+        </div>
+
+        <!-- Error State -->
+        <div class="error-message" id="errorMessage" style="display: none;">
+            <div class="error-content">
+                <h2>😞 Không tìm thấy sản phẩm</h2>
+                <p>Sản phẩm bạn tìm kiếm không tồn tại hoặc đã bị xóa.</p>
+                <a href="main.html" class="btn-back">Quay lại trang chủ</a>
+            </div>
+        </div>
+
+        <!-- Product Detail Section -->
+        <section class="product-detail" id="productDetail" style="display: none;">
+            <!-- Cột bên trái: Hình ảnh -->
+            <div class="product-gallery">
+                <!-- Hình ảnh chính -->
+                <div class="main-image-container">
+                    <img src="" alt="Product" id="mainImage" class="main-image">
+
+                    <!-- Nút điều hướng slider -->
+                    <button class="nav-btn prev-btn" id="prevBtn">‹</button>
+                    <button class="nav-btn next-btn" id="nextBtn">›</button>
+
+                    <!-- Chỉ số ảnh -->
+                    <div class="image-counter" id="imageCounter">1 / 4</div>
+                </div>
+
+                <!-- Thumbnail Images -->
+                <div class="thumbnail-gallery" id="thumbnailGallery">
+                    <!-- Sẽ được tạo bằng JS -->
+                </div>
+            </div>
+
+            <!-- Cột bên phải: Thông tin sản phẩm -->
+            <div class="product-info">
+                <h1 class="product-name" id="productName">Tên sản phẩm</h1>
+
+                <div class="product-price-container">
+                    <span class="product-price" id="productPrice">0đ</span>
+                    <span class="stock-status in-stock">✓ Còn hàng</span>
+                </div>
+
+                <div class="product-description">
+                    <h3>Mô tả sản phẩm</h3>
+                    <p id="productDescription">Mô tả chi tiết về sản phẩm...</p>
+                </div>
+
+                <!-- Quantity Selector -->
+                <div class="quantity-section">
+                    <label>Số lượng:</label>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus" id="minusBtn">−</button>
+                        <input type="number" class="qty-input" id="qtyInput" value="1" min="1" max="99" readonly>
+                        <button class="qty-btn plus" id="plusBtn">+</button>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn-add-cart" id="addToCartBtn">
+                        <span class="btn-icon">🛒</span>
+                        <span>Thêm vào giỏ hàng</span>
+                    </button>
+                    <button class="btn-buy-now" id="buyNowBtn">
+                        <span>Mua ngay</span>
+                    </button>
+                </div>
+
+                <!-- Product Features -->
+                <div class="product-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🚚</span>
+                        <div class="feature-text">
+                            <strong>Giao hàng nhanh</strong>
+                            <p>Nhận hàng trong 2-3 ngày</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div class="feature-text">
+                            <strong>Chính hãng 100%</strong>
+                            <p>Cam kết hàng chính hãng</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">↻</span>
+                        <div class="feature-text">
+                            <strong>Đổi trả dễ dàng</strong>
+                            <p>Trong vòng 7 ngày</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- PHẦN NÀY CHÈN VÀO product.html -->
+        <!-- Đặt sau phần Related Products Section -->
+        <!-- ============================================= -->
+
+        <!-- Product Reviews Section -->
+ 
+
+        <!-- Related Products Section -->
+        <section class="related-products" id="relatedProducts" style="display: none;">
+            <h2 class="section-title">Sản phẩm liên quan</h2>
+            <div class="related-grid" id="relatedGrid">
+                <!-- Sẽ được tạo bằng JS -->
+            </div>
+        </section>
+    </div>
+
+       <section class="product-reviews" id="productReviews" style="display: none;">
+            <div class="reviews-container">
+                <!-- Reviews Header -->
+                <div class="reviews-header">
+                    <h2 class="reviews-title">Đánh giá sản phẩm</h2>
+                    <div class="reviews-summary">
+                        <div class="reviews-average">
+                            <div class="average-score" id="averageScore">0.0</div>
+                            <div class="average-stars" id="averageStars">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <div class="reviews-count" id="reviewsCount">0 đánh giá</div>
+                        </div>
+
+                        <div class="reviews-distribution" id="reviewsDistribution">
+                            <!-- Sẽ được tạo bằng JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Write Review Form -->
+                <div class="write-review">
+                    <h3>Viết đánh giá của bạn</h3>
+
+                    <form class="review-form" id="reviewForm">
+                        <!-- Star Rating -->
+                        <div class="form-group">
+                            <label>Đánh giá của bạn: <span class="required">*</span></label>
+                            <div class="star-rating" id="starRating">
+                                <span class="star" data-rating="1">☆</span>
+                                <span class="star" data-rating="2">☆</span>
+                                <span class="star" data-rating="3">☆</span>
+                                <span class="star" data-rating="4">☆</span>
+                                <span class="star" data-rating="5">☆</span>
+                            </div>
+                            <input type="hidden" id="ratingValue" value="0">
+                            <span class="rating-text" id="ratingText">Chọn số sao</span>
+                        </div>
+
+                        <!-- User Name -->
+                        <div class="form-group">
+                            <label for="reviewName">Tên của bạn: <span class="required">*</span></label>
+                            <input type="text" id="reviewName" class="form-input" placeholder="Nhập tên của bạn"
+                                maxlength="50">
+                        </div>
+
+                        <!-- Review Content -->
+                        <div class="form-group">
+                            <label for="reviewContent">Nội dung đánh giá: <span class="required">*</span></label>
+                            <textarea id="reviewContent" class="form-textarea"
+                                placeholder="Chia sẻ trải nghiệm của bạn về sản phẩm này..." rows="5"
+                                maxlength="500"></textarea>
+                            <div class="char-count">
+                                <span id="charCount">0</span>/500 ký tự
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-submit-review">
+                            <span>📝</span> Gửi đánh giá
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Reviews List -->
+                <div class="reviews-list">
+                    <div class="reviews-list-header">
+                        <h3>Tất cả đánh giá</h3>
+                        <div class="reviews-sort">
+                            <label>Sắp xếp:</label>
+                            <select id="sortReviews" class="sort-select">
+                                <option value="newest">Mới nhất</option>
+                                <option value="highest">Đánh giá cao nhất</option>
+                                <option value="lowest">Đánh giá thấp nhất</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Items Container -->
+                    <div class="reviews-items" id="reviewsItems">
+                        <!-- Sẽ được tạo bằng JS -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="reviews-empty" id="reviewsEmpty">
+                        <div class="empty-icon">💬</div>
+                        <p>Chưa có đánh giá nào</p>
+                        <p class="empty-subtext">Hãy là người đầu tiên đánh giá sản phẩm này!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- FOOTER - Giống y hệt trang main.html -->
+    <div class="footer">
+        <div class="footer-contain">
+            <h3>Contact me</h3>
+            <p>Phone: 0962788079</p>
+            <p>Email: lttanh3709@gmail.com</p>
+            <p>Address: Thuận An, Bình Dương</p>
+        </div>
+        <div class="footer-contain">
+            <h3>Navigation</h3>
+            <a href="main.html">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+        </div>
+        <div class="footer-contain">
+            <h3>Follow us</h3>
+            <a href="https://www.instagram.com/_ltta.dino_/">
+                <img src="assest/icons/ig.png" alt="Instagram">Instagram
+            </a>
+            <a href="https://www.facebook.com/lttt.dino">
+                <img src="assest/icons/fb.png" alt="Facebook">Facebook
+            </a>
+            <a href="https://www.tiktok.com/@ltta.wxz">
+                <img src="assest/icons/tik.png" alt="Tik Tok">Tik Tok
+            </a>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">Đã thêm vào giỏ hàng!</span>
+    </div>
+
+    <script src="js/product.js"></script>
+    <script src="js/review.js"></script>
+
+</body>
+
+</html>

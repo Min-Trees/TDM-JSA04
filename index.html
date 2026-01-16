@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDM-JSA04 | Web Development Advance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
+        <div class="floating-elements">
+            <div class="floating-code">&lt;/&gt;</div>
+            <div class="floating-code">{}</div>
+            <div class="floating-code">[]</div>
+            <div class="floating-code">()</div>
+            <div class="floating-code">#</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">TDM-JSA04</span>
+                    <span class="logo-sub">Web Advance</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Dự án</span>
+                </a>
+                <a href="#curriculum" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Chương trình</span>
+                </a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" title="Chuyển đổi giao diện">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#projects" class="btn-header">
+                    <span>Xem dự án</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-nav-link">Trang chủ</a>
+        <a href="#projects" class="mobile-nav-link">Dự án</a>
+        <a href="#curriculum" class="mobile-nav-link">Chương trình</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <div class="badge-pulse"></div>
+                    <i class="fas fa-rocket"></i>
+                    <span>Khóa học Web Development Advance </span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Chào mừng đến với</span>
+                    <span class="title-highlight">
+                        <span class="gradient-text">Lớp TDM-JSA04</span>
+                        <svg class="title-underline" viewBox="0 0 300 12">
+                            <path d="M2 10 Q 150 -5 298 10" stroke="url(#gradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#0891b2"/>
+                                    <stop offset="100%" style="stop-color:#14b8a6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                </h1>
+                
+                <p class="hero-description">
+                    Nơi học viên được trang bị kiến thức và kỹ năng web development từ cơ bản đến nâng cao, 
+                    xây dựng các dự án thực tế với HTML5, CSS3, JavaScript và hơn thế nữa.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-label">Học viên</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-label">Dự án</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">Files Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">
+                        <span>Khám phá dự án</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="#curriculum" class="btn-secondary">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Xem chương trình</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-title">TDM-JSA04.js</div>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-var">students</span> = [
+  { <span class="code-string">"name"</span>: <span class="code-string">"Phan Hồng Minh"</span> },
+  { <span class="code-string">"name"</span>: <span class="code-string">"Nguyễn Bá Nhật Nam"</span> },
+  { <span class="code-string">"name"</span>: <span class="code-string">"Nguyễn Ân Thiên Phúc"</span> },
+  { <span class="code-string">"name"</span>: <span class="code-string">"Lê Trần Tuấn Anh"</span> }
+];
+
+<span class="code-keyword">class</span> <span class="code-class">WebAdvance</span> {
+  <span class="code-function">constructor</span>() {
+    <span class="code-keyword">this</span>.teacher = <span class="code-string">"Nguyễn Phạm Minh Trí"</span>;
+    <span class="code-keyword">this</span>.class = <span class="code-string">"TDM-JSA04"</span>;
+  }
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="instructor-card">
+                    <div class="instructor-avatar">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">Giảng viên</span>
+                        <span class="instructor-name">Nguyễn Phạm Minh Trí</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Cuộn xuống</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Portfolio</span>
+                </div>
+                <h2 class="section-title">Dự Án Của Học Viên</h2>
+                <p class="section-desc">
+                    Khám phá các dự án web được xây dựng bởi học viên lớp TDM-JSA04. 
+                    
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 - Hồng Minh -->
+                <article class="project-card" data-category="quiz">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="student-avatar gradient-1">
+                                <span>HM</span>
+                                <div class="avatar-ring"></div>
+                            </div>
+                            <div class="student-info">
+                                <h3 class="student-name">Phan Hồng Minh</h3>
+                                <span class="project-type">
+                                    <i class="fas fa-question-circle"></i>
+                                    Quiz Application
+                                </span>
+                            </div>
+                            <div class="card-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="card-preview">
+                            <div class="preview-mockup">
+                                <div class="mockup-header">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-quiz">
+                                        <div class="quiz-question"></div>
+                                        <div class="quiz-options">
+                                            <div class="option"></div>
+                                            <div class="option"></div>
+                                            <div class="option active"></div>
+                                            <div class="option"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="project-desc">
+                                Ứng dụng quiz trắc nghiệm toán học với hệ thống quản lý câu hỏi theo chương, 
+                                thi đua online và theo dõi điểm số chi tiết.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag" data-tech="html"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="tech-tag" data-tech="css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span class="tech-tag" data-tech="js"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="tech-tag" data-tech="json"><i class="fas fa-database"></i> JSON</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="Hồng Minh/index.html" class="btn-view">
+                                <i class="fas fa-eye"></i>
+                                <span>Xem Demo</span>
+                            </a>
+                            <a href="Hồng Minh/admin.html" class="btn-admin">
+                                <i class="fas fa-cog"></i>
+                                <span>Admin</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 - Nhật Nam -->
+                <article class="project-card" data-category="ecommerce">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="student-avatar gradient-2">
+                                <span>NN</span>
+                                <div class="avatar-ring"></div>
+                            </div>
+                            <div class="student-info">
+                                <h3 class="student-name">Nguyễn Bá Nhật Nam</h3>
+                                <span class="project-type">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    E-Commerce Store
+                                </span>
+                            </div>
+                            <div class="card-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-preview">
+                            <div class="preview-mockup">
+                                <div class="mockup-header">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-shop">
+                                        <div class="shop-header"></div>
+                                        <div class="shop-products">
+                                            <div class="product"></div>
+                                            <div class="product"></div>
+                                            <div class="product"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="project-desc">
+                                Website bán đồ chơi mô hình với danh mục Beyblade, Kamen Rider, Ninjago. 
+                                Tính năng giỏ hàng và quản lý sản phẩm đầy đủ.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag" data-tech="html"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="tech-tag" data-tech="css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span class="tech-tag" data-tech="js"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="tech-tag" data-tech="json"><i class="fas fa-database"></i> JSON</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="Nhật Nam/mainkamenrider.html" class="btn-view">
+                                <i class="fas fa-eye"></i>
+                                <span>Xem Demo</span>
+                            </a>
+                            <a href="Nhật Nam/admin.html" class="btn-admin">
+                                <i class="fas fa-cog"></i>
+                                <span>Admin</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 - Thiên Phúc -->
+                <article class="project-card" data-category="management">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="student-avatar gradient-3">
+                                <span>TP</span>
+                                <div class="avatar-ring"></div>
+                            </div>
+                            <div class="student-info">
+                                <h3 class="student-name">Nguyễn Ân Thiên Phúc</h3>
+                                <span class="project-type">
+                                    <i class="fas fa-school"></i>
+                                    School Management
+                                </span>
+                            </div>
+                            <div class="card-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-preview">
+                            <div class="preview-mockup">
+                                <div class="mockup-header">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-dashboard">
+                                        <div class="dash-sidebar"></div>
+                                        <div class="dash-main">
+                                            <div class="dash-cards">
+                                                <div class="dash-card"></div>
+                                                <div class="dash-card"></div>
+                                            </div>
+                                            <div class="dash-table"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="project-desc">
+                                Hệ thống quản lý trường học toàn diện với quản lý giáo viên, học sinh, 
+                                lớp học và phòng học. Giao diện dashboard chuyên nghiệp.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag" data-tech="html"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="tech-tag" data-tech="css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span class="tech-tag" data-tech="js"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="tech-tag" data-tech="json"><i class="fas fa-database"></i> JSON</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="Thiên Phúc/dangnhap.html" class="btn-view">
+                                <i class="fas fa-eye"></i>
+                                <span>Xem Demo</span>
+                            </a>
+                            <a href="Thiên Phúc/giaovien.html" class="btn-admin">
+                                <i class="fas fa-cog"></i>
+                                <span>Quản lý</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 - Tuấn Anh -->
+                <article class="project-card" data-category="multipurpose">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="student-avatar gradient-4">
+                                <span>TA</span>
+                                <div class="avatar-ring"></div>
+                            </div>
+                            <div class="student-info">
+                                <h3 class="student-name">Lê Trần Tuấn Anh</h3>
+                                <span class="project-type">
+                                    <i class="fas fa-layer-group"></i>
+                                    Multi-purpose Website
+                                </span>
+                            </div>
+                            <div class="card-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-preview">
+                            <div class="preview-mockup">
+                                <div class="mockup-header">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-multi">
+                                        <div class="multi-nav"></div>
+                                        <div class="multi-hero"></div>
+                                        <div class="multi-features">
+                                            <div class="feature"></div>
+                                            <div class="feature"></div>
+                                            <div class="feature"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="project-desc">
+                                Website đa chức năng với trang chủ, hệ thống giỏ hàng, profile người dùng 
+                                và tích hợp nhiều tính năng thú vị khác.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag" data-tech="html"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="tech-tag" data-tech="css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span class="tech-tag" data-tech="js"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="tech-tag" data-tech="json"><i class="fas fa-database"></i> JSON</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="Tuấn Anh/main.html" class="btn-view">
+                                <i class="fas fa-eye"></i>
+                                <span>Xem Demo</span>
+                            </a>
+                            <a href="Tuấn Anh/admin.html" class="btn-admin">
+                                <i class="fas fa-cog"></i>
+                                <span>Admin</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <i class="fas fa-book-open"></i>
+                    <span>Curriculum</span>
+                </div>
+                <h2 class="section-title">Chương Trình Học</h2>
+                <p class="section-desc">
+                    Khóa học Web Advance được thiết kế bài bản, từ nền tảng đến nâng cao
+                </p>
+            </div>
+
+            <div class="curriculum-grid">
+                <div class="curriculum-card">
+                    <div class="curriculum-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="curriculum-number">01</div>
+                    <h3>HTML5 Nâng Cao</h3>
+                    <p>Semantic HTML, Forms, Accessibility, SEO Structure</p>
+                    <ul class="curriculum-list">
+                        <li>Cấu trúc semantic</li>
+                        <li>Form validation</li>
+                        <li>Web accessibility</li>
+                    </ul>
+                </div>
+
+                <div class="curriculum-card">
+                    <div class="curriculum-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="curriculum-number">02</div>
+                    <h3>CSS3 & Layout</h3>
+                    <p>Flexbox, Grid, Animations, Responsive Design</p>
+                    <ul class="curriculum-list">
+                        <li>Flexbox & Grid</li>
+                        <li>CSS Animations</li>
+                        <li>Mobile First</li>
+                    </ul>
+                </div>
+
+                <div class="curriculum-card">
+                    <div class="curriculum-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="curriculum-number">03</div>
+                    <h3>JavaScript ES6+</h3>
+                    <p>DOM, Events, Async/Await, Modern JS</p>
+                    <ul class="curriculum-list">
+                        <li>DOM Manipulation</li>
+                        <li>Event Handling</li>
+                        <li>ES6+ Features</li>
+                    </ul>
+                </div>
+
+                <div class="curriculum-card">
+                    <div class="curriculum-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="curriculum-number">04</div>
+                    <h3>Data & Storage</h3>
+                    <p>JSON, Local Storage, Fetch API</p>
+                    <ul class="curriculum-list">
+                        <li>JSON Data</li>
+                        <li>Local Storage</li>
+                        <li>CRUD Operations</li>
+                    </ul>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-main">TDM-JSA04</span>
+                                <span class="logo-sub">Web Advance</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">
+                            Khóa học Web Development Advance tại MindX Technology School
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links-group">
+                        <h4>Liên kết</h4>
+                        <ul>
+                            <li><a href="#home">Trang chủ</a></li>
+                            <li><a href="#projects">Dự án</a></li>
+                            <li><a href="#curriculum">Chương trình</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-group">
+                        <h4>Học viên</h4>
+                        <ul>
+                            <li><a href="Hồng Minh/index.html">Phan Hồng Minh</a></li>
+                            <li><a href="Nhật Nam/mainkamenrider.html">Nguyễn Bá Nhật Nam</a></li>
+                            <li><a href="Thiên Phúc/dangnhap.html">Nguyễn Ân Thiên Phúc</a></li>
+                            <li><a href="Tuấn Anh/main.html">Lê Trần Tuấn Anh</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Liên hệ</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <span>Nguyễn Phạm Minh Trí</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>TDM-JSA04</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>MindX Thủ Dầu Một</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; TDM-JSA04 Web Advance</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

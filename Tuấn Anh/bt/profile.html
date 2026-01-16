@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - MindX Cinema</title>
+    <link rel="stylesheet" href="profile-style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo" onclick="window.location.href='home.html'">MINDX CINEMA</div>
+        <div class="nav-right">
+            <button class="btn-back" onclick="window.location.href='home.html'">← Back to Home</button>
+            <button class="btn-logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <span id="avatarInitial">U</span>
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-username" id="profileUsername">Username</h1>
+                    <p class="profile-email" id="profileEmail">user@example.com</p>
+                    <p class="profile-joined">Member since: <span id="joinedDate">2024</span></p>
+                </div>
+                <button class="btn-edit" onclick="toggleEditMode()">✏️ Edit Profile</button>
+            </div>
+
+            <!-- Edit Profile Form -->
+            <div class="edit-section hidden" id="editSection">
+                <h2 class="section-title">Edit Profile</h2>
+                <form id="editProfileForm">
+                    <div class="input-group">
+                        <label>Username</label>
+                        <input type="text" id="editUsername" readonly>
+                        <span class="input-note">Username cannot be changed</span>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" id="editEmail" required>
+                        <span class="error-text" id="emailError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>New Password (leave blank to keep current)</label>
+                        <input type="password" id="editPassword" placeholder="Enter new password">
+                        <span class="error-text" id="passwordError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Confirm New Password</label>
+                        <input type="password" id="editConfirmPassword" placeholder="Confirm new password">
+                        <span class="error-text" id="confirmError"></span>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-save">💾 Save Changes</button>
+                        <button type="button" class="btn-cancel" onclick="toggleEditMode()">✖️ Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Favorite Movies Section -->
+            <div class="favorites-section">
+                <div class="section-header">
+                    <h2 class="section-title">❤️ My Favorite Movies</h2>
+                    <span class="favorites-count" id="favoritesCount">0 movies</span>
+                </div>
+                <div id="favoritesGrid" class="movies-grid">
+                    <div class="empty-state">
+                        <p>You haven't added any favorite movies yet.</p>
+                        <button class="btn-browse" onclick="window.location.href='home.html'">Browse Movies</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watched Movies Section -->
+            <div class="watched-section">
+                <div class="section-header">
+                    <h2 class="section-title">👁️ Recently Watched</h2>
+                    <span class="watched-count" id="watchedCount">0 movies</span>
+                </div>
+                <div id="watchedGrid" class="movies-grid">
+                    <div class="empty-state">
+                        <p>No watch history yet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-section">
+                <h2 class="section-title">📊 Your Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalFavorites">0</div>
+                        <div class="stat-label">Favorite Movies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalWatched">0</div>
+                        <div class="stat-label">Movies Watched</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="favoriteGenre">N/A</div>
+                        <div class="stat-label">Favorite Genre</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="avgRating">0.0</div>
+                        <div class="stat-label">Avg Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathAir - Admin Panel</title>
+    
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/components.css">
+    <link rel="stylesheet" href="CSS/admin.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <i class="fas fa-crown"></i>
+                    <span>Admin</span>
+                </div>
+                <button class="sidebar-toggle-mobile" id="sidebar-toggle-mobile">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link active" data-section="dashboard">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" data-section="contests">
+                            <i class="fas fa-trophy"></i>
+                            <span>Tạo Cuộc Thi</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" data-section="elo-ranking">
+                            <i class="fas fa-star"></i>
+                            <span>Thống Kê ELO</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" data-section="students">
+                            <i class="fas fa-users"></i>
+                            <span>Quản Lý Học Viên</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" data-section="reports">
+                            <i class="fas fa-flag"></i>
+                            <span>Báo Cáo & Ban</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="ASSETS/images/avatars/nghenhin_xedoisong_mclaren-2.jpg" alt="Admin" class="user-avatar" id="admin-profile-avatar">
+                    <div class="user-details">
+                        <p class="user-name" id="admin-profile-name">Admin</p>
+                        <p class="user-role">Quản Trị Viên</p>
+                    </div>
+                </div>
+                <button class="btn-small" id="profile-btn">Hồ Sơ</button>
+            </div>
+        </aside>
+
+        <div class="admin-main">
+            <header class="admin-header">
+                <div class="admin-header-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 id="section-title">Dashboard</h2>
+                </div>
+
+                <div class="admin-header-right">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="search-input" placeholder="Tìm kiếm...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+
+                    <button class="theme-toggle" id="theme-toggle" title="Chuyển đổi chế độ tối/sáng">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <div class="settings-menu">
+                        <button class="settings-btn" id="settings-btn">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu" id="settings-dropdown">
+                            <a href="#" class="dropdown-item">Cài Đặt</a>
+                            <a href="#" class="dropdown-item">Hồ Sơ Quản Trị</a>
+                            <a href="#" class="dropdown-item" id="logout-btn">Đăng Xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="admin-content" id="admin-content">
+            </main>
+        </div>
+    </div>
+
+    <div id="contest-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Tạo Cuộc Thi Mới</h3>
+                <button class="modal-close" id="contest-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="contest-form">
+                    <div class="form-group">
+                        <label for="contest-title">Tên Cuộc Thi *</label>
+                        <input type="text" id="contest-title" name="title" placeholder="VD: Cuộc thi Toán Khối 7" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contest-description">Mô Tả *</label>
+                        <textarea id="contest-description" name="description" rows="3" placeholder="Mô tả chi tiết về cuộc thi..." required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contest-start-time">Thời Gian Bắt Đầu *</label>
+                            <input type="datetime-local" id="contest-start-time" name="startTime" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contest-end-time">Thời Gian Kết Thúc *</label>
+                            <input type="datetime-local" id="contest-end-time" name="endTime" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contest-duration">Thời Gian Thi (phút) *</label>
+                            <input type="number" id="contest-duration" name="duration" min="10" max="180" value="60" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contest-total-questions">Số Câu Hỏi *</label>
+                            <input type="number" id="contest-total-questions" name="totalQuestions" min="5" max="100" value="20" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contest-question-source">Nguồn Câu Hỏi *</label>
+                        <select id="contest-question-source" name="questionSource" required>
+                            <option value="">-- Chọn nguồn câu hỏi --</option>
+                            <option value="chapter-7-1">Lớp 7 - Chương 1: Số Hữu Tỉ</option>
+                            <option value="chapter-7-2">Lớp 7 - Chương 2: Số Thực</option>
+                            <option value="chapter-7-3">Lớp 7 - Chương 3: Biểu Thức Đại Số</option>
+                            <option value="chapter-8-1">Lớp 8 - Chương 1: Đa Thức</option>
+                            <option value="chapter-8-2">Lớp 8 - Chương 2: Phân Thức</option>
+                            <option value="chapter-9-1">Lớp 9 - Chương 1: Căn Bậc Hai</option>
+                            <option value="random">Ngẫu Nhiên (Trộn lẫn từ tất cả)</option>
+                        </select>
+                    </div>
+                    <div id="contest-form-error" class="error-msg" style="display: none; margin-top: 1rem;"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-secondary" id="contest-modal-cancel">Hủy</button>
+                <button type="submit" class="btn-primary" form="contest-form">Tạo Cuộc Thi</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="user-action-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Nâng Rank Học Viên</h3>
+                <button class="modal-close" id="user-action-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="user-action-form">
+                    <input type="hidden" id="user-action-id" name="userId">
+                    <div class="form-group">
+                        <label for="user-action-status">Nâng Lên Rank</label>
+                        <select id="user-action-status" name="status" required>
+                            <option value="">-- Chọn rank --</option>
+                            <option value="novice">Novice (Mới vào)</option>
+                            <option value="beginner">Beginner (Bắt đầu)</option>
+                            <option value="intermediate">Intermediate (Trung bình)</option>
+                            <option value="advanced">Advanced (Nâng cao)</option>
+                            <option value="expert">Expert (Chuyên gia)</option>
+                            <option value="master">Master (Bậc thầy)</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-secondary" id="user-action-modal-cancel">Hủy</button>
+                <button type="submit" class="btn-primary" form="user-action-form">Cập Nhật Rank</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="report-details-modal" class="modal" style="display: none;">
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <h3>Chi Tiết Báo Cáo</h3>
+                <button class="modal-close" id="report-details-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="report-details-body">
+            </div>
+        </div>
+    </div>
+
+    <div id="admin-profile-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Hồ Sơ Quản Trị Viên</h3>
+                <button class="modal-close" id="admin-profile-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="admin-profile-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/router.js"></script>
+    <script src="JS/auth.js"></script>
+    <script src="JS/contests.js"></script>
+    <script src="JS/admin.js"></script>
+</body>
+</html>

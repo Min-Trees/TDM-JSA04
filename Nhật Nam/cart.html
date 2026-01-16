@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - MShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <div class="header">
+            <div class="nav">
+                <div class="logo">
+                    <h2>MShop</h2>
+                </div>
+                <div class="search">
+                    <form class="search-bar" action="#" method="get">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="submit" class="btn search-btn">Tìm</button>
+                    </form>
+                </div>
+                <div class="menu">
+                    <ul class="nav_item">
+                        <a href="main.html" title="Trang chủ">Trang chủ</a>
+                        <li>Sale</li>
+                        <li>Trợ giúp</li>
+                        <li class="cart-icon-wrapper">
+                            <a href="cart.html" title="Giỏ hàng">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg>
+                                <span class="cart-badge" id="cart-badge">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="container">
+            <div class="type">
+                <ul class="type_item">
+                    <a href="mainkamenrider.html" title="Kamen Rider">Kamen Rider</a>
+                    <a href="mainbeyblade.html" title="Beyblade">Beyblade</a>
+                    <a href="mainninjago.html" title="Ninjago">Ninjago</a>
+                </ul>
+            </div>
+
+            <!-- Cart Section -->
+            <div class="cart-container">
+                <h1 class="cart-title">Giỏ Hàng Của Bạn</h1>
+
+                <!-- Empty Cart Message -->
+                <div class="empty-cart" id="empty-cart" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <h2>Giỏ hàng trống</h2>
+                    <p>Hãy thêm sản phẩm vào giỏ hàng để tiếp tục mua sắm</p>
+                    <a href="mainbeyblade.html" class="btn-continue-shopping">Tiếp tục mua sắm</a>
+                </div>
+
+                <!-- Cart Content -->
+                <div class="cart-content" id="cart-content">
+                    <!-- Cart Header -->
+                    <div class="cart-header">
+                        <div class="cart-header-checkbox">
+                            <input type="checkbox" id="select-all-checkbox">
+                            <label for="select-all-checkbox">Chọn tất cả</label>
+                        </div>
+                        <div class="cart-header-product">Sản phẩm</div>
+                        <div class="cart-header-price">Đơn giá</div>
+                        <div class="cart-header-quantity">Số lượng</div>
+                        <div class="cart-header-total">Thành tiền</div>
+                        <div class="cart-header-action">Thao tác</div>
+                    </div>
+
+                    <!-- Cart Items -->
+                    <div class="cart-items" id="cart-items">
+                        <!-- Items will be loaded here by JavaScript -->
+                    </div>
+
+                    <!-- Cart Summary -->
+                    <div class="cart-summary">
+                        <div class="cart-summary-left">
+                            <input type="checkbox" id="summary-select-all">
+                            <label for="summary-select-all">Chọn tất cả (<span id="total-items">0</span>)</label>
+                            <button class="btn-delete-selected" id="delete-selected-btn">Xóa</button>
+                        </div>
+                        <div class="cart-summary-right">
+                            <div class="summary-row">
+                                <span class="summary-label">Tổng thanh toán (<span id="selected-items">0</span> sản phẩm):</span>
+                                <span class="summary-total" id="total-price">0₫</span>
+                            </div>
+                            <button class="btn-checkout" id="checkout-btn">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>Về MShop</h3>
+                    <p>Chuyên cung cấp mô hình & đồ chơi chính hãng: Beyblade, Kamen Rider, Ultraman, Super Sentai.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">Trợ giúp</a></li>
+                        <li><a href="#">Giỏ hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Liên hệ</h3>
+                    <p>Email: nguyenbanhatnam1103@gmail.com</p>
+                    <p>Hotline: 0862 999 709</p>
+                    <p>Địa chỉ: Thủ Dầu Một, Bình Dương</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MShop. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

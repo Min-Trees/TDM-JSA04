@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #F8F8F8;
+}
+
+.cart {
+    max-width: 700px;
+    width: 100%;
+    background: #E0E0E0;
+    padding: 25px 30px;
+    border-radius: 20px;
+    border: 1.5px solid #00F5FF;
+}
+
+.cart header title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #004C99;
+}
+
+.cart form .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box {
+    width: 300px;
+    height: 100px;
+}
+
+.info .input-box input {
+    margin-top: 10px;
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #004C99;
+    padding-left: 15px;
+    font-size: 16px;
+    border: 0.5px solid #00F5FF;
+}
+
+.info .input-box label {
+    color: #004C99;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+input[type="text"]:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px #062e74;
+}
+
+input[type="password"]::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+input[type="password"]:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px #062e74;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 12px 14px;
+    font-weight: 800;
+    color: #004C99;
+    background-color: #00f5ff;
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: #00f5ff;
+    background-color: #004C99;
+}

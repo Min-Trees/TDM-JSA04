@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindX Cinema - Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="navbar">
+        <div class="logo">MINDX CINEMA</div>
+    </div>
+
+    <div class="container">
+        <!-- Form Đăng Nhập -->
+        <div class="form-wrapper" id="signinForm">
+            <h1>Sign In</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="loginUsername" required>
+                    <label>Email or phone number</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPassword" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn-primary">Sign In</button>
+                <div class="form-footer">
+                    <label class="remember">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="help">Need Help?</a>
+                </div>
+            </form>
+            <div class="form-switch">
+                New to MindX Cinema? <a href="#" id="showSignup">Sign up now</a>
+            </div>
+        </div>
+
+        <!-- Form Đăng Ký -->
+        <div class="form-wrapper hidden" id="signupForm">
+            <h1>Sign Up</h1>
+            <form id="registerForm">
+                <div class="input-group">
+                    <input type="text" id="signupUsername" required>
+                    <label>Username (6-18 characters)</label>
+                    <span class="error-text" id="usernameError"></span>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="signupEmail" required>
+                    <label>Email</label>
+                    <span class="error-text" id="emailError"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signupPassword" required>
+                    <label>Password (8-20 characters)</label>
+                    <span class="error-text" id="passwordError"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" required>
+                    <label>Confirm Password</label>
+                    <span class="error-text" id="confirmError"></span>
+                </div>
+                <button type="submit" class="btn-primary">Sign Up</button>
+            </form>
+            <div class="form-switch">
+                Already have an account? <a href="#" id="showSignin">Sign in now</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

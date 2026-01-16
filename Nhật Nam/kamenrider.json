@@ -1,0 +1,111 @@
+{
+  "gotchard": [
+    {
+      "id": 9,
+      "name": "DX Gotchard Driver",
+      "price": "1.200.000",
+      "images": [
+        "images/Kamen rider/gotcharddriver.png",
+        "images/Kamen rider/gotcharddriver1.png",
+        "images/Kamen rider/gotcharddriver2.png",
+        "images/Kamen rider/gotcharddriver3.png"
+      ],
+      "sizeImage": "images/Kamen rider/gotcharddriver.png",
+      "description": "Bộ thắt lưng Gotchard giúp ta hóa thân thành nhiều hình dạng bằng cách kết hợp 2 thẻ bài khác nhau."
+    },
+    {     
+      "id": 10,
+      "name": "DX Gotchard Card Phase 01",
+      "price": "150.000",
+      "images": [
+        "images/Ninjago/phase1.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Kamen rider/phase1.png",
+      "description": "Gói mở thẻ random gồm 5 thẻ bài khác nhau để ta có thể kết hợp với thắt lưng Gotchard Driver."
+    },
+    {     
+      "id": 11,
+      "name": "DX Gotchard Card Phase 02",
+      "price": "150.000",
+      "images": [
+        "images/Ninjago/phase2.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Kamen rider/phase2.png",
+      "description": "Gói mở thẻ random gồm 5 thẻ bài khác nhau để ta có thể kết hợp với thắt lưng Gotchard Driver nhưng được bổ sung thêm nhiều thể loại thẻ khác nhau."
+    },
+    {     
+      "id": 12,
+      "name": "DX Gotchard Card Phase 03",
+      "price": "150.000",
+      "images": [
+        "images/Ninjago/70635.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Kamen rider/phase3.png",
+      "description": "Sự nâng cấp từ 2 phase trước cùng với 5 lá bài trong 1 pack và những bộ thẻ bài mới được sử dụng để nâng cấp cái dạng cho Gotchard Driver."
+    }
+  ],
+
+  "geats": [
+    {     
+      "id": 13,
+      "name": "Surprise Mission Box 001 & DX Double Driver Raise Buckle Set",
+      "price": "599.000",
+      "images": [
+        "images/Ninjago/71806.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Kamen rider/geats2.png",
+      "description": "Là hộp đựng Buckle giống với phim và kèm thêm một W Buckle."
+    },
+    {     
+      "id": 14,
+      "name": "DX Desire Driver",
+      "price": "1.299.000",
+      "images": [
+        "images/Ninjago/71843.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Kamen rider/geatsdriver.png",
+      "description": "Thắt lưng Desire có thể gắn ID core vào trung tâm và kết hợp thêm nhiều Buckle khác nhau với 2 khe cắm."
+    },
+    {     
+      "id": 15,
+      "name": "DX Chain Array & Claw Raise Buckle Set",
+      "price": "299.000",
+      "images": [
+        "images/Ninjago/71801.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Kamen rider/geats3.png",
+      "description": "Set Buckle đôi để sử dụng chung cùng với Desire Driver."
+    },
+    {     
+      "id": 16,
+      "name": "DX Ninja Raise Buckle",
+      "price": "599.000",
+      "images": [
+        "images/Ninjago/71826.png",
+        "images/Ninjago/70689_alt1.png",
+        "images/Ninjago/70689_alt2.png",
+        "images/Ninjago/70689_alt5.png"
+      ],
+      "sizeImage": "images/Kamen rider/geats1.png",
+      "description": "Một Buckle lớn mang chủ đề Ninja giúp nâng cấp và tận dụng tối đa công suất sử dụng của Desire Driver."
+    }
+  ]
+}

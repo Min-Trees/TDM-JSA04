@@ -1,0 +1,29 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+
+h3 {
+    text-align: center;
+    color: #004C99;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    color: #004C99;
+    background-color: #ebebeb;
+    font-size: 15px;
+    border: #00F5FF solid 1px;
+}
+
+.btn:hover {
+    background-color: #00F5FF;
+    color: #ffffff;
+}

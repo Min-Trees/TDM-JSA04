@@ -1,0 +1,131 @@
+/* ================================================
+   FILTER SYSTEM STYLES
+   ================================================ */
+
+.filter-wrapper {
+    max-width: 1200px;
+    margin: -20px auto 40px;
+    padding: 0 20px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.filter-container:hover {
+    border-color: #1e40af;
+    box-shadow: 0 4px 16px rgba(30, 64, 175, 0.12);
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.filter-label svg {
+    color: #1e40af;
+}
+
+.filter-select {
+    flex: 1;
+    max-width: 300px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1e293b;
+    background: #f8f9fa;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231e40af' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px;
+}
+
+.filter-select:hover {
+    background-color: white;
+    border-color: #1e40af;
+}
+
+.filter-select:focus {
+    background-color: white;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.filter-select option {
+    padding: 12px;
+    font-size: 15px;
+}
+
+/* Animation cho khi sắp xếp */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-card {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-wrapper {
+        margin: -10px auto 30px;
+    }
+    
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 18px 20px;
+    }
+    
+    .filter-label {
+        font-size: 15px;
+    }
+    
+    .filter-select {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-container {
+        padding: 15px;
+    }
+    
+    .filter-label {
+        font-size: 14px;
+    }
+    
+    .filter-label svg {
+        width: 16px;
+        height: 16px;
+    }
+}

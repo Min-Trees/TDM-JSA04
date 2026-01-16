@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-SCHOOL - Quản lý học sinh</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">Quản lí học sinh</div>
+        <div class="app-body">
+            <div class="sidebar">
+                <ul class="sidebar-group">
+                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="hocsinh.html">Học sinh</a></li>
+                    <li><a href="giaovien.html" class="active">Giáo viên</a></li>
+                    <li><a href="lophoc.html">Lớp học</a></li>
+                    <li><a href="caidat.html">Cài đặt</a></li>
+                    <li><a href="dangnhap.html">Đăng Xuất</a></li>
+                </ul>
+            </div>
+        
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Search Section -->
+                <div class="search-section">
+                    <input type="text" placeholder="Nhập tên giáo viên cần tìm kiếm..." id="searchInput">
+                </div>
+
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <div class="filter-container">
+                        <!-- Filter theo Môn học -->
+                        <div class="filter-item">
+                            <label for="filter-subject">Môn dạy:</label>
+                            <div class="custom-select">
+                                <select id="filter-subject">
+                                    <option value="">-- Tất cả môn --</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Filter theo Chủ nhiệm -->
+                        <div class="filter-item">
+                            <label for="filter-homeroom">Chủ nhiệm:</label>
+                            <div class="custom-select">
+                                <select id="filter-homeroom">
+                                    <option value="">-- Tất cả --</option>
+                                    <option value="yes">Có chủ nhiệm</option>
+                                    <option value="no">Không chủ nhiệm</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Sắp xếp -->
+                        <div class="filter-item">
+                            <label>Sắp xếp:</label>
+                            <div class="sort-wrapper">
+                                <div id="sort-name" class="sort-display">
+                                    <span class="sort-text">Chọn thứ tự</span>
+                                    <span class="sort-arrow">▼</span>
+                                </div>
+                                <div id="sort-buttons" class="sort-dropdown">
+                                    <button type="button" onclick="sortName('asc')">
+                                        <span>↑</span> A → Z
+                                    </button>
+                                    <button type="button" onclick="sortName('desc')">
+                                        <span>↓</span> Z → A
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nút Reset -->
+                        <div class="filter-item">
+                            <button id="btn-reset-filter" class="btn-reset">
+                                <span>↻</span> Xóa bộ lọc
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table Section -->
+                <div class="table-section">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Họ tên</th>
+                                <th>Phòng ban</th>
+                                <th>Môn dạy</th>
+                                <th>Chủ nhiệm</th>
+                                <th>SĐT</th>
+                                <th>Mã GV</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teacher-body"></tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination Section -->
+                <div class="pagination-section">
+                    <div class="pagination-info">
+                        Hiển thị <span id="showing-start">1</span> - <span id="showing-end">20</span> 
+                        trong tổng số <span id="total-students">0</span> giáo viên
+                    </div>
+                    <div class="pagination-controls">
+                        <button id="btn-first" class="page-btn" title="Trang đầu">
+                            <span>⟪</span>
+                        </button>
+                        <button id="btn-prev" class="page-btn" title="Trang trước">
+                            <span>‹</span>
+                        </button>
+                        <div id="page-numbers" class="page-numbers"></div>
+                        <button id="btn-next" class="page-btn" title="Trang sau">
+                            <span>›</span>
+                        </button>
+                        <button id="btn-last" class="page-btn" title="Trang cuối">
+                            <span>⟫</span>
+                        </button>
+                    </div>
+                    <div class="pagination-size">
+                        <label for="page-size">Số dòng/trang:</label>
+                        <select id="page-size">
+                            <option value="10">10</option>
+                            <option value="20" selected>20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

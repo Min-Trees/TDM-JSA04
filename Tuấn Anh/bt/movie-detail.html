@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail - MindX Cinema</title>
+    <link rel="stylesheet" href="movie-detail-style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo" onclick="window.location.href='home.html'">MINDX CINEMA</div>
+        <div class="nav-right">
+            <button class="btn-back" onclick="window.location.href='home.html'">← Back to Home</button>
+            <button class="btn-logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div id="movieDetail" class="loading-container">
+        <div class="loading">Loading movie details...</div>
+    </div>
+
+    <script src="movie-detail-script.js"></script>
+</body>
+</html>

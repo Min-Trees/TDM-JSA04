@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="prompt">
+        <h3>Thêm giáo viên</h3>
+
+        <label>Mã giáo viên</label>
+        <input id="id" placeholder="GV001">
+
+        <label>Họ và tên</label>
+        <input id="name" placeholder="Ngô Thanh Dũng">
+
+        <label>Giới tính</label>
+        <select id="gender">
+            <option>Nam</option>
+            <option>Nữ</option>
+        </select>
+
+        <label>Số điện thoại</label>
+        <input id="phone" placeholder="0989xxxxxx">
+
+        <label>Ngày sinh</label>
+        <input id="birthday" type="date">
+
+        <label>Tổ / Ban</label>
+        <input id="department" placeholder="Ban Giám Hiệu">
+
+        <label>Môn chính</label>
+        <input id="mainSubject" placeholder="Toán">
+
+        <label>Các môn dạy (phân cách bằng dấu ,)</label>
+        <input id="subjects" placeholder="Toán, Lý">
+
+        <button onclick="addTeacher()">Thêm giáo viên</button>
+    </div>
+</body>
+</html>

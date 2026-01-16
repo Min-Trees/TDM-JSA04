@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindX Cinema - Home</title>
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo">MINDX CINEMA</div>
+        <div class="nav-right">
+            <div class="user-info">
+                Welcome, <span id="username"></span>
+            </div>
+            <button class="btn-logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1 class="page-title">
+                🎬 Discover Movies
+            </h1>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label>Genre</label>
+                    <select id="genreFilter">
+                        <option value="">All Genres</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Year</label>
+                    <select id="yearFilter">
+                        <option value="">All Years</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort By</label>
+                    <select id="sortFilter">
+                        <option value="popularity.desc">Popularity</option>
+                        <option value="vote_average.desc">Rating</option>
+                        <option value="release_date.desc">Newest</option>
+                        <option value="title.asc">Title (A-Z)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Search</label>
+                    <input type="text" id="searchInput" placeholder="Search movies...">
+                </div>
+            </div>
+
+            <!-- Movies Grid -->
+            <div id="moviesContainer" class="loading">Loading movies...</div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+
+    <script src="home-script.js"></script>
+</body>
+</html>

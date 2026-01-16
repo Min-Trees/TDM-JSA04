@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0c4a6e;
+    padding: 20px;
+}
+
+/* CARD CHI TIẾT */
+.detail-card {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid #e0f2fe;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ảnh */
+.detail-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Tên */
+.detail-name {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #0c4a6e;
+}
+
+/* Lớp */
+.detail-class {
+    text-align: center;
+    font-size: 17px;
+    color: #0891b2;
+    margin-bottom: 20px;
+}
+
+/* Thông tin */
+.detail-info {
+    margin-top: 10px;
+}
+
+.detail-info div {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+.detail-info span.label {
+    font-weight: 600;
+    color: #0891b2;
+}
+
+/* Nút quay lại */
+.btn-back {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+    border: none;
+    color: white;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(8,145,178,0.25);
+}
+
+.btn-back:hover {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    transform: translateY(-2px);
+}

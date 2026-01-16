@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Cá Nhân</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header_left">
+            <a href="main.html">
+                <img src="image/logo.png" alt="Logo" width="60" height="60">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li><a href="main.html" class="nav_link">Trang chủ</a></li>
+                <li><a href="#" class="nav_link">Sản phẩm</a></li>
+                <li><a href="#" class="nav_link">Về chúng tôi</a></li>
+                <li><a href="#" class="nav_link">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <img src="image/search.png" alt="Search" class="icon">
+            <img src="image/heart.png" alt="Wishlist" class="icon">
+            <img src="image/cart.png" alt="Cart" class="icon">
+            <a href="profile.html">
+                <img src="image/user.png" alt="User" class="icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- Profile Container -->
+    <div class="container">
+        <div class="profile-wrapper">
+            <!-- Sidebar -->
+            <aside class="profile-sidebar">
+                <div class="profile-avatar">
+                    <div class="avatar-wrapper">
+                        <img src="image/avatar-default.png" alt="Avatar" id="avatarImage">
+                        <button class="avatar-upload-btn" id="avatarUploadBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                <circle cx="12" cy="13" r="4"></circle>
+                            </svg>
+                        </button>
+                        <input type="file" id="avatarInput" accept="image/*" hidden>
+                    </div>
+                    <h2 id="displayName">Nguyễn Văn A</h2>
+                    <p class="user-email" id="displayEmail">user@example.com</p>
+                </div>
+
+                <nav class="profile-menu">
+                    <a href="#" class="menu-item active" data-section="personal-info">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Thông tin cá nhân
+                    </a>
+                    <a href="#" class="menu-item" data-section="security">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        Bảo mật
+                    </a>
+                    <a href="login.html" class="menu-item logout">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            <polyline points="16 17 21 12 16 7"></polyline>
+                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                        </svg>
+                        Đăng xuất
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="profile-content">
+                <!-- Personal Info Section -->
+                <section id="personal-info" class="content-section active">
+                    <h1 class="section-title">Thông Tin Cá Nhân</h1>
+                    <form id="personalInfoForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Họ và tên</label>
+                                <input type="text" id="fullName" value="Nguyễn Văn A">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="text" id="phone" value="0123456789">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="user@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="birthday">Ngày sinh</label>
+                                <input type="date" id="birthday" value="1990-01-01">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Giới tính</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="male" checked>
+                                    <span>Nam</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="female">
+                                    <span>Nữ</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="other">
+                                    <span>Khác</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-save">Lưu thay đổi</button>
+                    </form>
+                </section>
+
+                <!-- Orders Section -->
+                <section id="orders" class="content-section">
+                    <h1 class="section-title">Đơn Hàng Của Tôi</h1>
+                    <div class="orders-filter">
+                        <button class="filter-btn active" data-status="all">Tất cả</button>
+                        <button class="filter-btn" data-status="pending">Chờ xác nhận</button>
+                        <button class="filter-btn" data-status="shipping">Đang giao</button>
+                        <button class="filter-btn" data-status="completed">Hoàn thành</button>
+                        <button class="filter-btn" data-status="cancelled">Đã hủy</button>
+                    </div>
+                    <div class="orders-list" id="ordersList">
+                        <!-- Orders will be loaded here -->
+                    </div>
+                </section>
+
+                <!-- Addresses Section -->
+                <section id="addresses" class="content-section">
+                    <h1 class="section-title">Địa Chỉ Của Tôi</h1>
+                    <button class="btn-add-address" id="addAddressBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        Thêm địa chỉ mới
+                    </button>
+                    <div class="addresses-list" id="addressesList">
+                        <!-- Addresses will be loaded here -->
+                    </div>
+                </section>
+
+                <!-- Payment Section -->
+                <section id="payment" class="content-section">
+                    <h1 class="section-title">Phương Thức Thanh Toán</h1>
+                    <button class="btn-add-card" id="addCardBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        Thêm thẻ mới
+                    </button>
+                    <div class="cards-list" id="cardsList">
+                        <!-- Cards will be loaded here -->
+                    </div>
+                </section>
+
+                <!-- Security Section -->
+                <section id="security" class="content-section">
+                    <h1 class="section-title">Bảo Mật & Mật Khẩu</h1>
+                    <form id="changePasswordForm">
+                        <div class="form-group">
+                            <label for="currentPassword">Mật khẩu hiện tại</label>
+                            <input type="password" id="currentPassword" placeholder="Nhập mật khẩu hiện tại">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Mật khẩu mới</label>
+                            <input type="password" id="newPassword" placeholder="Nhập mật khẩu mới">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Xác nhận mật khẩu mới</label>
+                            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu mới">
+                        </div>
+                        <button type="submit" class="btn-save">Đổi mật khẩu</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contain">
+            <h3>Về Chúng Tôi</h3>
+            <p>Cửa hàng đồ uống trực tuyến hàng đầu Việt Nam</p>
+        </div>
+        <div class="footer-contain">
+            <h3>Liên Hệ</h3>
+            <p>Email: contact@drinkshop.com</p>
+            <p>Hotline: 1900 1234</p>
+        </div>
+        <div class="footer-contain">
+            <h3>Theo Dõi</h3>
+            <a href="#"><img src="image/facebook.png" alt="Facebook"> Facebook</a>
+            <a href="#"><img src="image/instagram.png" alt="Instagram"> Instagram</a>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

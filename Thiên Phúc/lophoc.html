@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-SCHOOL - Quản lý lớp học</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <div class="header">Quản lý Lớp học</div>
+
+        <!-- Body -->
+        <div class="app-body">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul class="sidebar-group">
+                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="hocsinh.html">Học sinh</a></li>
+                    <li><a href="giaovien.html">Giáo viên</a></li>
+                    <li><a href="lophoc.html" class="active">Lớp học</a></li>
+                    <li><a href="caidat.html">Cài đặt</a></li>
+                    <li><a href="dangnhap.html">Đăng Xuất</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Search Section -->
+                <div class="search-section">
+                    <input type="text" placeholder="Nhập tên lớp cần tìm..." id="searchInput">
+                </div>
+
+                <!-- Stats Section -->
+                <div class="stats-section">
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <div class="stat-value" id="total-students">0</div>
+                            <div class="stat-label">Tổng học sinh</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <div class="stat-value" id="total-teachers">0</div>
+                            <div class="stat-label">Tổng giáo viên</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <div class="stat-value" id="total-classes">0</div>
+                            <div class="stat-label">Tổng lớp học</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <div class="stat-value" id="avg-students">0</div>
+                            <div class="stat-label">Số học sinh 1 lớp</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <div class="filter-container">
+                        <div class="filter-item">
+                            <label for="filter-grade">Khối:</label>
+                            <div class="custom-select">
+                                <select id="filter-grade">
+                                    <option value="">-- Tất cả khối --</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="filter-item">
+                            <button id="btn-reset-filter" class="btn-reset">
+                                <span>↻</span> Xóa bộ lọc
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="classes-section">
+                    <div id="classes-grid" class="classes-grid">
+                        <!-- render lớp vào đây -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

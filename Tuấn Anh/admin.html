@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <div class="admin-container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>🛡️ Admin</h2>
+                <p>Quản lý cửa hàng</p>
+            </div>
+            <nav>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#" class="active">
+                            <span>📦</span>
+                            <span>Quản lý sản phẩm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="main.html">
+                            <span>🏠</span>
+                            <span>Về trang chủ</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- HEADER -->
+            <div class="content-header">
+                <h1>Quản Lý Sản Phẩm</h1>
+                <div class="header-actions">
+                    <button class="btn-save-json" onclick="manualSaveJSON()" title="Lưu vào file JSON">
+                        <span>💾</span>
+                        <span>Lưu JSON</span>
+                    </button>
+                    <button class="btn-reset-json" onclick="resetJSONFiles()" title="Chọn lại file JSON">
+                        <span>🔄</span>
+                        <span>Reset</span>
+                    </button>
+                    <button class="btn-add" onclick="openAddModal()">
+                        <span>➕</span>
+                        <span>Thêm Sản Phẩm</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUCT SECTION -->
+            <div class="product-section">
+                <!-- FILTER TABS -->
+                <div class="filter-tabs">
+                    <button class="filter-tab active" onclick="filterCategory('all')">
+                        Tất cả (<span id="count-all">0</span>)
+                    </button>
+                    <button class="filter-tab" onclick="filterCategory('candy')">
+                        🍬 Kẹo (<span id="count-candy">0</span>)
+                    </button>
+                    <button class="filter-tab" onclick="filterCategory('snack')">
+                        🍰 Bánh (<span id="count-snack">0</span>)
+                    </button>
+                    <button class="filter-tab" onclick="filterCategory('drink')">
+                        🥤 Nước ngọt (<span id="count-drink">0</span>)
+                    </button>
+                </div>
+
+                <!-- PRODUCT TABLE -->
+                <table class="product-table" id="productTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Hình ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Danh mục</th>
+                            <th>Mô tả</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTableBody">
+                        <!-- Dữ liệu sẽ được load bằng JS -->
+                    </tbody>
+                </table>
+
+                <!-- EMPTY STATE -->
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <div class="empty-state-icon">📦</div>
+                    <h3>Chưa có sản phẩm nào</h3>
+                    <p>Nhấn nút "Thêm Sản Phẩm" để bắt đầu</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- MODAL THÊM/SỬA SẢN PHẨM -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Thêm Sản Phẩm</h2>
+                <button class="modal-close" onclick="closeModal()">×</button>
+            </div>
+
+            <form id="productForm">
+                <input type="hidden" id="productId">
+                <input type="hidden" id="editIndex">
+
+                <div class="form-group">
+                    <label>Tên sản phẩm *</label>
+                    <input type="text" id="productName" required placeholder="Nhập tên sản phẩm">
+                </div>
+
+                <div class="form-group">
+                    <label>Giá (VNĐ) *</label>
+                    <input type="number" id="productPrice" required placeholder="Nhập giá sản phẩm" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label>Danh mục *</label>
+                    <select id="productCategory" required>
+                        <option value="">-- Chọn danh mục --</option>
+                        <option value="candy">🍬 Kẹo</option>
+                        <option value="snack">🍰 Bánh</option>
+                        <option value="drink">🥤 Nước ngọt</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Mô tả</label>
+                    <textarea id="productDescription" placeholder="Nhập mô tả sản phẩm"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Hình ảnh</label>
+                    <div class="image-input-tabs">
+                        <button type="button" class="tab-btn active" onclick="switchImageTab('file')">📁 Từ máy</button>
+                        <button type="button" class="tab-btn" onclick="switchImageTab('url')">🔗 URL</button>
+                    </div>
+
+                    <div id="fileImageInput" class="image-input-panel">
+                        <input type="file" id="imageFile" accept="image/*" onchange="addImageFromFile()">
+                        <label for="imageFile" class="file-upload-label">
+                            <span class="upload-icon">📤</span>
+                            <span>Chọn hình ảnh từ máy (tối đa 30MB)</span>
+                            <span class="file-hint">Hỗ trợ: JPG, PNG, GIF, WebP</span>
+                        </label>
+                    </div>
+
+                    <div id="urlImageInput" class="image-input-panel" style="display: none;">
+                        <input type="text" id="imageUrl" placeholder="Nhập URL hình ảnh">
+                        <button type="button" class="btn-add-image" onclick="addImageFromUrl()">➕ Thêm hình</button>
+                    </div>
+
+                    <div class="image-preview-container" id="imagePreviewContainer">
+                        <!-- Hình ảnh preview sẽ hiển thị ở đây -->
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Hủy</button>
+                    <button type="submit" class="btn-save">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">
+        <span id="toastIcon">✅</span>
+        <span id="toastMessage">Thông báo</span>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

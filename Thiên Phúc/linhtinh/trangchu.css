@@ -1,0 +1,26 @@
+.container {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container .container-item {
+    width: 90%;
+    height: 230px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1.5px solid #00F5FF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    padding-left: 5px;
+}
+
+p {
+    padding-left: 10px;
+}

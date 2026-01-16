@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="filter.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="nav">
+                <div class ="logo">
+                    <h2>MShop</h2>
+                </div>
+                <div class="search">
+                      <form class="search-bar" action="#" method="get">
+                          <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+                          <button type="submit" class="btn search-btn">Tìm</button>
+                      </form>
+                </div>
+                <div class="menu">
+                    <ul class="nav_item">
+                        <a href="mainkamenrider.html" tilte="Trang chủ"> Trang chủ </a>
+                        <li>Sale</li>
+                        <li>Trợ giúp</li>   
+                               <li class="cart-icon-wrapper">
+            <a href="cart.html" title="Giỏ hàng">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </a>
+        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="type">
+                <ul class="type_item">
+                    <a href="mainkamenrider.html" title="Kamen Rider"> Kamen Rider </a>
+                    <a href="mainbeyblade.html" title="Beyblade"> Beyblade </a>
+                    <a href="mainninjago.html" title="Ninjago"> Ninjago </a>
+                </ul>
+            </div>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Beyblade</h1>
+                <p></p>
+                <button class="btn-primary">Xem Ngay</button>
+            </div>
+        </section>
+        
+
+        <section class="burst-section" id="burst">
+            <h2 class="section-title">Beyblade Burst</h2>
+            <div class="products-grid" id="burst-grid">
+                <!-- Sản phẩm sẽ được load bằng JavaScript -->
+            </div>
+        </section>
+        
+
+        <section class="x-section" id="x">
+            <h2 class="section-title">Beyblade X</h2>
+            <div class="products-grid" id="x-grid">
+                <!-- Sản phẩm sẽ được load bằng JavaScript -->
+            </div>
+        </section>
+    </main>
+    </div>
+
+   <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Về MShop</h3>
+          <p>Chuyên cung cấp mô hình & đồ chơi chính hãng: Beyblade, Kamen Rider, Ultraman, Super Sentai.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Liên kết nhanh</h3>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">Trợ giúp</a></li>
+            <li><a href="#">Giỏ hàng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Liên hệ</h3>
+          <p>Email: nguyenbanhatnam1103@gmail.com</p>
+          <p>Hotline: 0862 999 709</p>
+          <p>Địa chỉ: Thủ Dầu Một, Bình Dương</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 MShop. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="beyblade.js"></script>
+    <script src="search.js"></script>
+    <script src="filter.js"></script>
+    <script src="cart.js"></script>
+<!-- Thêm vào cuối file mainbeyblade.html, thay thế các script hiện tại -->
+
+    <script src="products-loader.js"></script>
+    <script>
+    // Load products when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        loadProductsFromStorage('burstProducts', 'burst-grid');
+        loadProductsFromStorage('xProducts', 'x-grid');
+    });
+    
+    // Reload function for storage event listener
+    function reloadCurrentPageProducts() {
+        loadProductsFromStorage('burstProducts', 'burst-grid');
+        loadProductsFromStorage('xProducts', 'x-grid');
+    }
+    </script>
+
+</body>
+</html>

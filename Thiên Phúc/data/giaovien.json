@@ -1,0 +1,3546 @@
+{
+  "school": "Trường THCS",
+  "totalTeachers": 91,
+  "totalHomeroom": 28,
+  "departments": [
+    {
+      "name": "Ban Giám Hiệu",
+      "teachers": [
+        {
+          "id": "GV001",
+          "name": "Ngô Thanh Dũng",
+          "gender": "Nam",
+          "phone": "0989941931",
+          "birthday": "05/02/1978",
+          "department": "Ban Giám Hiệu",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán"
+          ],
+          "roles": [
+            "Hiệu trưởng"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV002",
+          "name": "Dương Đức Thắng",
+          "gender": "Nam",
+          "phone": "0933876763",
+          "birthday": "12/05/1988",
+          "department": "Ban Giám Hiệu",
+          "mainSubject": "Vật Lý",
+          "subjects": [
+            "Vật Lý"
+          ],
+          "roles": [
+            "Hiệu phó"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV003",
+          "name": "Trần Như Vy",
+          "gender": "Nữ",
+          "phone": "0974372595",
+          "birthday": "18/03/1979",
+          "department": "Ban Giám Hiệu",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn"
+          ],
+          "roles": [
+            "Hiệu phó"
+          ],
+          "homeroom": null
+        }
+      ]
+    },
+    {
+      "name": "Toán",
+      "teachers": [
+        {
+          "id": "GV004",
+          "name": "Lê Như Hùng",
+          "gender": "Nam",
+          "phone": "0978638645",
+          "birthday": "01/08/1991",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "6A1"
+        },
+        {
+          "id": "GV005",
+          "name": "Phạm Hồng Hùng",
+          "gender": "Nam",
+          "phone": "0869112525",
+          "birthday": "25/03/1986",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Tin Học",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV006",
+          "name": "Hoàng Thị Loan",
+          "gender": "Nữ",
+          "phone": "0866329285",
+          "birthday": "17/02/1980",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Tin Học",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "6A2"
+        },
+        {
+          "id": "GV007",
+          "name": "Đặng Thu Vinh",
+          "gender": "Nam",
+          "phone": "0977061216",
+          "birthday": "26/09/1983",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Sinh Hoạt Lớp",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV008",
+          "name": "Dương Thanh Thắng",
+          "gender": "Nam",
+          "phone": "0986615093",
+          "birthday": "04/09/1993",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Sinh Hoạt Lớp",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV009",
+          "name": "Nguyễn Quốc Yến",
+          "gender": "Nữ",
+          "phone": "0889961691",
+          "birthday": "17/11/1992",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Sinh Hoạt Lớp",
+            "Tin Học",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV010",
+          "name": "Đỗ Thu Phương",
+          "gender": "Nữ",
+          "phone": "0949030832",
+          "birthday": "17/09/1989",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Tin Học",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "6A3"
+        },
+        {
+          "id": "GV011",
+          "name": "Ngô Xuân Khánh",
+          "gender": "Nam",
+          "phone": "0881573485",
+          "birthday": "27/10/1987",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Tin Học",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV012",
+          "name": "Dương Đình Bình",
+          "gender": "Nam",
+          "phone": "0979304496",
+          "birthday": "03/05/1971",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV013",
+          "name": "Ngô Thanh Hưng",
+          "gender": "Nam",
+          "phone": "0994733933",
+          "birthday": "11/06/1977",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "6A4"
+        },
+        {
+          "id": "GV014",
+          "name": "Trần Đức Ngọc",
+          "gender": "Nữ",
+          "phone": "0864030308",
+          "birthday": "24/04/1974",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "Sinh Hoạt Lớp",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV015",
+          "name": "Huỳnh Hữu Chi",
+          "gender": "Nữ",
+          "phone": "0943360519",
+          "birthday": "23/07/1986",
+          "department": "Toán",
+          "mainSubject": "Toán",
+          "subjects": [
+            "Toán",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        }
+      ]
+    },
+    {
+      "name": "Ngữ Văn",
+      "teachers": [
+        {
+          "id": "GV016",
+          "name": "Võ Thành Chi",
+          "gender": "Nữ",
+          "phone": "0988537376",
+          "birthday": "02/11/1971",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "Tin Học",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV017",
+          "name": "Phạm Quốc Thảo",
+          "gender": "Nữ",
+          "phone": "0936625591",
+          "birthday": "07/12/1994",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "Tin Học",
+            "Sinh Hoạt Lớp",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "6A5"
+        },
+        {
+          "id": "GV018",
+          "name": "Huỳnh Văn Phương",
+          "gender": "Nữ",
+          "phone": "0885565832",
+          "birthday": "05/09/1988",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "Sinh Hoạt Lớp",
+            "Tin Học",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "6A6"
+        },
+        {
+          "id": "GV019",
+          "name": "Ngô Hữu Phương",
+          "gender": "Nữ",
+          "phone": "0905260755",
+          "birthday": "11/02/1981",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "6A7"
+        },
+        {
+          "id": "GV020",
+          "name": "Phạm Hữu Hưng",
+          "gender": "Nam",
+          "phone": "0909177122",
+          "birthday": "28/10/1991",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "7A1"
+        },
+        {
+          "id": "GV021",
+          "name": "Vũ Minh Sơn",
+          "gender": "Nam",
+          "phone": "0999990652",
+          "birthday": "10/08/1975",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "Tin Học",
+            "Sinh Hoạt Lớp",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "7A2"
+        },
+        {
+          "id": "GV022",
+          "name": "Lý Đức Phương",
+          "gender": "Nữ",
+          "phone": "0909964508",
+          "birthday": "06/01/1993",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "7A3"
+        },
+        {
+          "id": "GV023",
+          "name": "Lý Như Mai",
+          "gender": "Nữ",
+          "phone": "0964820281",
+          "birthday": "12/06/1973",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "Sinh Hoạt Lớp",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "7A4"
+        },
+        {
+          "id": "GV024",
+          "name": "Huỳnh Minh Dũng",
+          "gender": "Nam",
+          "phone": "0928719086",
+          "birthday": "06/11/1991",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "Sinh Hoạt Lớp",
+            "Tin Học",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV025",
+          "name": "Trần Hồng Đạt",
+          "gender": "Nam",
+          "phone": "0993052962",
+          "birthday": "20/11/1977",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "Tin Học",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "7A5"
+        },
+        {
+          "id": "GV026",
+          "name": "Hồ Đình Vinh",
+          "gender": "Nam",
+          "phone": "0884672215",
+          "birthday": "17/02/1976",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "GDCD",
+            "Tin Học",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "7A6"
+        },
+        {
+          "id": "GV027",
+          "name": "Hồ Thị Vy",
+          "gender": "Nữ",
+          "phone": "0972918330",
+          "birthday": "21/10/1986",
+          "department": "Ngữ Văn",
+          "mainSubject": "Ngữ Văn",
+          "subjects": [
+            "Ngữ Văn",
+            "GDCD",
+            "Sinh Hoạt Lớp",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "7A7"
+        }
+      ]
+    },
+    {
+      "name": "Tiếng Anh",
+      "teachers": [
+        {
+          "id": "GV028",
+          "name": "Đặng Thành Minh",
+          "gender": "Nam",
+          "phone": "0924461777",
+          "birthday": "24/06/1989",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "Sinh Hoạt Lớp",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "8A1"
+        },
+        {
+          "id": "GV029",
+          "name": "Hoàng Đình Phong",
+          "gender": "Nam",
+          "phone": "0933162599",
+          "birthday": "25/08/1980",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "Tin Học",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "8A2"
+        },
+        {
+          "id": "GV030",
+          "name": "Hoàng Quốc Loan",
+          "gender": "Nữ",
+          "phone": "0963015535",
+          "birthday": "23/01/1973",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV031",
+          "name": "Dương Công Chi",
+          "gender": "Nữ",
+          "phone": "0993096126",
+          "birthday": "28/07/1971",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "Sinh Hoạt Lớp",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV032",
+          "name": "Trần Minh Nga",
+          "gender": "Nữ",
+          "phone": "0862347557",
+          "birthday": "19/11/1991",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "Sinh Hoạt Lớp",
+            "Tin Học",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "8A3"
+        },
+        {
+          "id": "GV033",
+          "name": "Nguyễn Thu Nhung",
+          "gender": "Nữ",
+          "phone": "0921650856",
+          "birthday": "17/04/1987",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "Tin Học",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "8A4"
+        },
+        {
+          "id": "GV034",
+          "name": "Đặng Xuân Thảo",
+          "gender": "Nữ",
+          "phone": "0865005353",
+          "birthday": "10/05/1971",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "GDCD",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "8A5"
+        },
+        {
+          "id": "GV035",
+          "name": "Hoàng Hữu Yến",
+          "gender": "Nữ",
+          "phone": "0960562449",
+          "birthday": "05/12/1975",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "Sinh Hoạt Lớp",
+            "GDCD",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "8A6"
+        },
+        {
+          "id": "GV036",
+          "name": "Ngô Thành Nam",
+          "gender": "Nam",
+          "phone": "0917486081",
+          "birthday": "09/03/1993",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "Sinh Hoạt Lớp",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "8A7"
+        },
+        {
+          "id": "GV037",
+          "name": "Lê Hữu Cường",
+          "gender": "Nam",
+          "phone": "0936206723",
+          "birthday": "20/03/1972",
+          "department": "Tiếng Anh",
+          "mainSubject": "Tiếng Anh",
+          "subjects": [
+            "Tiếng Anh",
+            "GDCD",
+            "Tin Học",
+            "Sinh Hoạt Lớp"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "9A1"
+        }
+      ]
+    },
+    {
+      "name": "Môn Phụ",
+      "teachers": [
+        {
+          "id": "GV053",
+          "name": "Phạm Công Cường",
+          "gender": "Nam",
+          "phone": "0863142112",
+          "birthday": "28/07/1974",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Địa Lý",
+          "subjects": [
+            "Địa Lý",
+            "GDCD",
+            "Lịch Sử"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV054",
+          "name": "Nguyễn Thu Chi",
+          "gender": "Nữ",
+          "phone": "0868711172",
+          "birthday": "05/04/1982",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Lịch Sử",
+          "subjects": [
+            "Lịch Sử",
+            "Địa Lý",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV055",
+          "name": "Nguyễn Thành Yến",
+          "gender": "Nữ",
+          "phone": "0904437100",
+          "birthday": "18/10/1986",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Địa Lý",
+          "subjects": [
+            "Địa Lý",
+            "GDCD",
+            "Lịch Sử"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV056",
+          "name": "Lý Thành Tài",
+          "gender": "Nam",
+          "phone": "0990537724",
+          "birthday": "03/11/1994",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Lịch Sử",
+          "subjects": [
+            "Lịch Sử",
+            "Địa Lý",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV057",
+          "name": "Phan Đức Ngọc",
+          "gender": "Nữ",
+          "phone": "0991670199",
+          "birthday": "10/04/1988",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "GDCD",
+          "subjects": [
+            "GDCD",
+            "Địa Lý",
+            "Lịch Sử"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV058",
+          "name": "Huỳnh Công Tài",
+          "gender": "Nam",
+          "phone": "0911412937",
+          "birthday": "09/05/1976",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Lịch Sử",
+          "subjects": [
+            "Lịch Sử",
+            "GDCD",
+            "Địa Lý"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV059",
+          "name": "Lý Công Linh",
+          "gender": "Nữ",
+          "phone": "0976995764",
+          "birthday": "23/08/1983",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Lịch Sử",
+          "subjects": [
+            "Lịch Sử",
+            "GDCD",
+            "Địa Lý"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV060",
+          "name": "Võ Công Khánh",
+          "gender": "Nam",
+          "phone": "0911653833",
+          "birthday": "27/08/1971",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Địa Lý",
+          "subjects": [
+            "Địa Lý",
+            "GDCD",
+            "Lịch Sử"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV061",
+          "name": "Phan Thành Khoa",
+          "gender": "Nam",
+          "phone": "0907931974",
+          "birthday": "16/01/1990",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Địa Lý",
+          "subjects": [
+            "Địa Lý",
+            "Lịch Sử",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV062",
+          "name": "Trần Thành Tài",
+          "gender": "Nam",
+          "phone": "0863532682",
+          "birthday": "11/08/1978",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Lịch Sử",
+          "subjects": [
+            "Lịch Sử",
+            "Địa Lý",
+            "GDCD"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV063",
+          "name": "Hồ Thành Quỳnh",
+          "gender": "Nữ",
+          "phone": "0970951932",
+          "birthday": "05/10/1975",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Địa Lý",
+          "subjects": [
+            "Địa Lý",
+            "GDCD",
+            "Lịch Sử"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV064",
+          "name": "Trần Hữu Thắng",
+          "gender": "Nam",
+          "phone": "0865354561",
+          "birthday": "20/01/1975",
+          "department": "Khoa Học Xã Hội",
+          "mainSubject": "Địa Lý",
+          "subjects": [
+            "Địa Lý",
+            "GDCD",
+            "Lịch Sử"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV038",
+          "name": "Hoàng Thành Mai",
+          "gender": "Nữ",
+          "phone": "0912987511",
+          "birthday": "28/10/1992",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Vật Lý",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "9A2"
+        },
+        {
+          "id": "GV039",
+          "name": "Lê Văn Nhung",
+          "gender": "Nữ",
+          "phone": "0880200047",
+          "birthday": "05/12/1970",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Sinh Học",
+            "Vật Lý"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "9A3"
+        },
+        {
+          "id": "GV040",
+          "name": "Hoàng Hữu Hà",
+          "gender": "Nữ",
+          "phone": "0968789639",
+          "birthday": "24/07/1989",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Vật Lý",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV041",
+          "name": "Bùi Quốc Hương",
+          "gender": "Nữ",
+          "phone": "0948361166",
+          "birthday": "03/06/1971",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Vật Lý",
+          "subjects": [
+            "Vật Lý",
+            "Hóa Học",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "9A4"
+        },
+        {
+          "id": "GV042",
+          "name": "Lý Hồng Nhung",
+          "gender": "Nữ",
+          "phone": "0866511953",
+          "birthday": "12/08/1979",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Sinh Học",
+            "Vật Lý"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV043",
+          "name": "Hồ Minh Quỳnh",
+          "gender": "Nữ",
+          "phone": "0888363712",
+          "birthday": "03/09/1974",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Vật Lý",
+          "subjects": [
+            "Vật Lý",
+            "Hóa Học",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "9A5"
+        },
+        {
+          "id": "GV044",
+          "name": "Lý Đức Quỳnh",
+          "gender": "Nữ",
+          "phone": "0944044813",
+          "birthday": "08/05/1983",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Vật Lý",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "9A6"
+        },
+        {
+          "id": "GV045",
+          "name": "Đặng Hữu Nhung",
+          "gender": "Nữ",
+          "phone": "0986831149",
+          "birthday": "27/05/1978",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Vật Lý",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giáo viên chủ nhiệm"
+          ],
+          "homeroom": "9A7"
+        },
+        {
+          "id": "GV046",
+          "name": "Đặng Thu Trung",
+          "gender": "Nam",
+          "phone": "0913056273",
+          "birthday": "12/06/1973",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Vật Lý",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV047",
+          "name": "Dương Hữu Hùng",
+          "gender": "Nam",
+          "phone": "0999245330",
+          "birthday": "05/02/1987",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Vật Lý",
+          "subjects": [
+            "Vật Lý",
+            "Hóa Học",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV048",
+          "name": "Đỗ Đình Nga",
+          "gender": "Nữ",
+          "phone": "0913452906",
+          "birthday": "24/07/1988",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Vật Lý",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV049",
+          "name": "Bùi Đức Vinh",
+          "gender": "Nam",
+          "phone": "0913781151",
+          "birthday": "27/02/1971",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Vật Lý",
+          "subjects": [
+            "Vật Lý",
+            "Hóa Học",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV050",
+          "name": "Phan Hồng Tuấn",
+          "gender": "Nam",
+          "phone": "0886331851",
+          "birthday": "11/02/1978",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Hóa Học",
+          "subjects": [
+            "Hóa Học",
+            "Vật Lý",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV051",
+          "name": "Hồ Công Tài",
+          "gender": "Nam",
+          "phone": "0865844179",
+          "birthday": "04/04/1976",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Sinh Học",
+          "subjects": [
+            "Sinh Học",
+            "Hóa Học",
+            "Vật Lý"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV052",
+          "name": "Phan Như Quỳnh",
+          "gender": "Nữ",
+          "phone": "0943694587",
+          "birthday": "09/05/1983",
+          "department": "Khoa Học Tự Nhiên",
+          "mainSubject": "Vật Lý",
+          "subjects": [
+            "Vật Lý",
+            "Hóa Học",
+            "Sinh Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV065",
+          "name": "Phạm Minh Lan",
+          "gender": "Nữ",
+          "phone": "0861074870",
+          "birthday": "16/04/1990",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Âm Nhạc",
+            "Công Nghệ",
+            "Thể Dục"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV066",
+          "name": "Huỳnh Đình Giang",
+          "gender": "Nam",
+          "phone": "0973308092",
+          "birthday": "02/02/1971",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Mỹ Thuật",
+            "Âm Nhạc"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV067",
+          "name": "Huỳnh Thành Nhung",
+          "gender": "Nữ",
+          "phone": "0865778390",
+          "birthday": "04/10/1978",
+          "department": "Môn Phụ",
+          "mainSubject": "Công Nghệ",
+          "subjects": [
+            "Công Nghệ",
+            "Mỹ Thuật",
+            "Thể Dục",
+            "Âm Nhạc"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV068",
+          "name": "Ngô Minh Bình",
+          "gender": "Nam",
+          "phone": "0927403284",
+          "birthday": "20/10/1983",
+          "department": "Môn Phụ",
+          "mainSubject": "Công Nghệ",
+          "subjects": [
+            "Công Nghệ",
+            "Âm Nhạc",
+            "Thể Dục",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV069",
+          "name": "Bùi Quốc Tuấn",
+          "gender": "Nam",
+          "phone": "0919041191",
+          "birthday": "22/03/1985",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Công Nghệ",
+            "Thể Dục",
+            "Âm Nhạc",
+            "Mỹ Thuật"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV070",
+          "name": "Huỳnh Thành Anh",
+          "gender": "Nữ",
+          "phone": "0928908807",
+          "birthday": "28/02/1981",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Mỹ Thuật",
+            "Công Nghệ",
+            "Âm Nhạc",
+            "Thể Dục"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV071",
+          "name": "Phạm Hữu Toàn",
+          "gender": "Nam",
+          "phone": "0948658321",
+          "birthday": "04/04/1982",
+          "department": "Môn Phụ",
+          "mainSubject": "Thể Dục",
+          "subjects": [
+            "Thể Dục",
+            "Công Nghệ",
+            "Mỹ Thuật",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV072",
+          "name": "Đỗ Đình Hưng",
+          "gender": "Nam",
+          "phone": "0995904781",
+          "birthday": "16/03/1993",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Công Nghệ",
+            "Mỹ Thuật",
+            "Thể Dục",
+            "Âm Nhạc"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV073",
+          "name": "Đỗ Công Khoa",
+          "gender": "Nam",
+          "phone": "0979612193",
+          "birthday": "17/02/1981",
+          "department": "Môn Phụ",
+          "mainSubject": "Mỹ Thuật",
+          "subjects": [
+            "Mỹ Thuật",
+            "Âm Nhạc",
+            "Thể Dục",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV074",
+          "name": "Phan Minh Quân",
+          "gender": "Nam",
+          "phone": "0880543325",
+          "birthday": "21/09/1983",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Công Nghệ",
+            "Thể Dục",
+            "Mỹ Thuật",
+            "Âm Nhạc"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV075",
+          "name": "Nguyễn Thanh Hưng",
+          "gender": "Nam",
+          "phone": "0886047447",
+          "birthday": "04/12/1973",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Mỹ Thuật",
+            "Tin Học",
+            "Công Nghệ",
+            "Thể Dục"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV076",
+          "name": "Trần Đức Khánh",
+          "gender": "Nam",
+          "phone": "0906253192",
+          "birthday": "24/05/1982",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Thể Dục",
+            "Công Nghệ",
+            "Âm Nhạc"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV077",
+          "name": "Võ Như Tài",
+          "gender": "Nam",
+          "phone": "0992424774",
+          "birthday": "16/02/1982",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Mỹ Thuật",
+            "Công Nghệ",
+            "Tin Học",
+            "Thể Dục"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV078",
+          "name": "Đặng Hữu Vinh",
+          "gender": "Nam",
+          "phone": "0944322256",
+          "birthday": "26/02/1975",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Thể Dục",
+            "Mỹ Thuật",
+            "Tin Học",
+            "Công Nghệ"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV079",
+          "name": "Phan Văn Bình",
+          "gender": "Nam",
+          "phone": "0944040932",
+          "birthday": "17/09/1987",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Mỹ Thuật",
+            "Công Nghệ"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV080",
+          "name": "Huỳnh Đức Nhi",
+          "gender": "Nữ",
+          "phone": "0883210495",
+          "birthday": "18/11/1973",
+          "department": "Môn Phụ",
+          "mainSubject": "Công Nghệ",
+          "subjects": [
+            "Công Nghệ",
+            "Tin Học",
+            "Thể Dục",
+            "Mỹ Thuật"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV081",
+          "name": "Vũ Đình Chi",
+          "gender": "Nữ",
+          "phone": "0921934918",
+          "birthday": "18/12/1977",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Công Nghệ",
+            "Mỹ Thuật",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV082",
+          "name": "Huỳnh Đình Loan",
+          "gender": "Nữ",
+          "phone": "0961157190",
+          "birthday": "03/03/1985",
+          "department": "Môn Phụ",
+          "mainSubject": "Thể Dục",
+          "subjects": [
+            "Thể Dục",
+            "Mỹ Thuật",
+            "Công Nghệ",
+            "Âm Nhạc",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV083",
+          "name": "Bùi Như Nga",
+          "gender": "Nữ",
+          "phone": "0889988877",
+          "birthday": "04/09/1975",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Tin Học",
+            "Thể Dục",
+            "Công Nghệ"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV084",
+          "name": "Lê Thị Diệu",
+          "gender": "Nữ",
+          "phone": "0979456536",
+          "birthday": "10/04/1971",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Âm Nhạc",
+            "Công Nghệ",
+            "Thể Dục"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV085",
+          "name": "Đặng Đức Yến",
+          "gender": "Nữ",
+          "phone": "0860251197",
+          "birthday": "16/08/1992",
+          "department": "Môn Phụ",
+          "mainSubject": "Công Nghệ",
+          "subjects": [
+            "Công Nghệ",
+            "Tin Học",
+            "Mỹ Thuật",
+            "Thể Dục"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV086",
+          "name": "Đỗ Văn Mai",
+          "gender": "Nữ",
+          "phone": "0979890609",
+          "birthday": "17/07/1992",
+          "department": "Môn Phụ",
+          "mainSubject": "Công Nghệ",
+          "subjects": [
+            "Công Nghệ",
+            "Tin Học",
+            "Âm Nhạc",
+            "Thể Dục",
+            "Mỹ Thuật"
+          ],
+          "roles": [
+            "Giáo viên bộ môn",
+            "Giám thị"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV087",
+          "name": "Huỳnh Hồng Ngọc",
+          "gender": "Nữ",
+          "phone": "0916112556",
+          "birthday": "04/12/1973",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Thể Dục",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV088",
+          "name": "Lê Minh Hưng",
+          "gender": "Nam",
+          "phone": "0906717864",
+          "birthday": "06/10/1978",
+          "department": "Môn Phụ",
+          "mainSubject": "Âm Nhạc",
+          "subjects": [
+            "Âm Nhạc",
+            "Tin Học",
+            "Công Nghệ",
+            "Thể Dục",
+            "Mỹ Thuật"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV089",
+          "name": "Đỗ Đình Nhi",
+          "gender": "Nữ",
+          "phone": "0887128498",
+          "birthday": "11/07/1986",
+          "department": "Môn Phụ",
+          "mainSubject": "Công Nghệ",
+          "subjects": [
+            "Công Nghệ",
+            "Tin Học",
+            "Thể Dục",
+            "Mỹ Thuật"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV090",
+          "name": "Trần Đình Cường",
+          "gender": "Nam",
+          "phone": "0865692603",
+          "birthday": "16/04/1973",
+          "department": "Môn Phụ",
+          "mainSubject": "Tin Học",
+          "subjects": [
+            "Tin Học",
+            "Công Nghệ",
+            "Mỹ Thuật",
+            "Âm Nhạc"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        },
+        {
+          "id": "GV091",
+          "name": "Hoàng Công Bình",
+          "gender": "Nam",
+          "phone": "0970312597",
+          "birthday": "28/05/1988",
+          "department": "Môn Phụ",
+          "mainSubject": "Mỹ Thuật",
+          "subjects": [
+            "Mỹ Thuật",
+            "Âm Nhạc",
+            "Tin Học"
+          ],
+          "roles": [
+            "Giáo viên bộ môn"
+          ],
+          "homeroom": null
+        }
+      ]
+    }
+  ],
+  "allTeachers": [
+    {
+      "id": "GV001",
+      "name": "Ngô Thanh Dũng",
+      "gender": "Nam",
+      "phone": "0989941931",
+      "birthday": "05/02/1978",
+      "department": "Ban Giám Hiệu",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán"
+      ],
+      "roles": [
+        "Hiệu trưởng"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV002",
+      "name": "Dương Đức Thắng",
+      "gender": "Nam",
+      "phone": "0933876763",
+      "birthday": "12/05/1988",
+      "department": "Ban Giám Hiệu",
+      "mainSubject": "Vật Lý",
+      "subjects": [
+        "Vật Lý"
+      ],
+      "roles": [
+        "Hiệu phó"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV003",
+      "name": "Trần Như Vy",
+      "gender": "Nữ",
+      "phone": "0974372595",
+      "birthday": "18/03/1979",
+      "department": "Ban Giám Hiệu",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn"
+      ],
+      "roles": [
+        "Hiệu phó"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV004",
+      "name": "Lê Như Hùng",
+      "gender": "Nam",
+      "phone": "0978638645",
+      "birthday": "01/08/1991",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "6A1"
+    },
+    {
+      "id": "GV005",
+      "name": "Phạm Hồng Hùng",
+      "gender": "Nam",
+      "phone": "0869112525",
+      "birthday": "25/03/1986",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Tin Học",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV006",
+      "name": "Hoàng Thị Loan",
+      "gender": "Nữ",
+      "phone": "0866329285",
+      "birthday": "17/02/1980",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Tin Học",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "6A2"
+    },
+    {
+      "id": "GV007",
+      "name": "Đặng Thu Vinh",
+      "gender": "Nam",
+      "phone": "0977061216",
+      "birthday": "26/09/1983",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Sinh Hoạt Lớp",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV008",
+      "name": "Dương Thanh Thắng",
+      "gender": "Nam",
+      "phone": "0986615093",
+      "birthday": "04/09/1993",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Sinh Hoạt Lớp",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV009",
+      "name": "Nguyễn Quốc Yến",
+      "gender": "Nữ",
+      "phone": "0889961691",
+      "birthday": "17/11/1992",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Sinh Hoạt Lớp",
+        "Tin Học",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV010",
+      "name": "Đỗ Thu Phương",
+      "gender": "Nữ",
+      "phone": "0949030832",
+      "birthday": "17/09/1989",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Tin Học",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "6A3"
+    },
+    {
+      "id": "GV011",
+      "name": "Ngô Xuân Khánh",
+      "gender": "Nam",
+      "phone": "0881573485",
+      "birthday": "27/10/1987",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Tin Học",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV012",
+      "name": "Dương Đình Bình",
+      "gender": "Nam",
+      "phone": "0979304496",
+      "birthday": "03/05/1971",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV013",
+      "name": "Ngô Thanh Hưng",
+      "gender": "Nam",
+      "phone": "0994733933",
+      "birthday": "11/06/1977",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "6A4"
+    },
+    {
+      "id": "GV014",
+      "name": "Trần Đức Ngọc",
+      "gender": "Nữ",
+      "phone": "0864030308",
+      "birthday": "24/04/1974",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "Sinh Hoạt Lớp",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV015",
+      "name": "Huỳnh Hữu Chi",
+      "gender": "Nữ",
+      "phone": "0943360519",
+      "birthday": "23/07/1986",
+      "department": "Toán",
+      "mainSubject": "Toán",
+      "subjects": [
+        "Toán",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV016",
+      "name": "Võ Thành Chi",
+      "gender": "Nữ",
+      "phone": "0988537376",
+      "birthday": "02/11/1971",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "Tin Học",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV017",
+      "name": "Phạm Quốc Thảo",
+      "gender": "Nữ",
+      "phone": "0936625591",
+      "birthday": "07/12/1994",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "Tin Học",
+        "Sinh Hoạt Lớp",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "6A5"
+    },
+    {
+      "id": "GV018",
+      "name": "Huỳnh Văn Phương",
+      "gender": "Nữ",
+      "phone": "0885565832",
+      "birthday": "05/09/1988",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "Sinh Hoạt Lớp",
+        "Tin Học",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "6A6"
+    },
+    {
+      "id": "GV019",
+      "name": "Ngô Hữu Phương",
+      "gender": "Nữ",
+      "phone": "0905260755",
+      "birthday": "11/02/1981",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "6A7"
+    },
+    {
+      "id": "GV020",
+      "name": "Phạm Hữu Hưng",
+      "gender": "Nam",
+      "phone": "0909177122",
+      "birthday": "28/10/1991",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "7A1"
+    },
+    {
+      "id": "GV021",
+      "name": "Vũ Minh Sơn",
+      "gender": "Nam",
+      "phone": "0999990652",
+      "birthday": "10/08/1975",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "Tin Học",
+        "Sinh Hoạt Lớp",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "7A2"
+    },
+    {
+      "id": "GV022",
+      "name": "Lý Đức Phương",
+      "gender": "Nữ",
+      "phone": "0909964508",
+      "birthday": "06/01/1993",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "7A3"
+    },
+    {
+      "id": "GV023",
+      "name": "Lý Như Mai",
+      "gender": "Nữ",
+      "phone": "0964820281",
+      "birthday": "12/06/1973",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "Sinh Hoạt Lớp",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "7A4"
+    },
+    {
+      "id": "GV024",
+      "name": "Huỳnh Minh Dũng",
+      "gender": "Nam",
+      "phone": "0928719086",
+      "birthday": "06/11/1991",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "Sinh Hoạt Lớp",
+        "Tin Học",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV025",
+      "name": "Trần Hồng Đạt",
+      "gender": "Nam",
+      "phone": "0993052962",
+      "birthday": "20/11/1977",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "Tin Học",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "7A5"
+    },
+    {
+      "id": "GV026",
+      "name": "Hồ Đình Vinh",
+      "gender": "Nam",
+      "phone": "0884672215",
+      "birthday": "17/02/1976",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "GDCD",
+        "Tin Học",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "7A6"
+    },
+    {
+      "id": "GV027",
+      "name": "Hồ Thị Vy",
+      "gender": "Nữ",
+      "phone": "0972918330",
+      "birthday": "21/10/1986",
+      "department": "Ngữ Văn",
+      "mainSubject": "Ngữ Văn",
+      "subjects": [
+        "Ngữ Văn",
+        "GDCD",
+        "Sinh Hoạt Lớp",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "7A7"
+    },
+    {
+      "id": "GV028",
+      "name": "Đặng Thành Minh",
+      "gender": "Nam",
+      "phone": "0924461777",
+      "birthday": "24/06/1989",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "Sinh Hoạt Lớp",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "8A1"
+    },
+    {
+      "id": "GV029",
+      "name": "Hoàng Đình Phong",
+      "gender": "Nam",
+      "phone": "0933162599",
+      "birthday": "25/08/1980",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "Tin Học",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "8A2"
+    },
+    {
+      "id": "GV030",
+      "name": "Hoàng Quốc Loan",
+      "gender": "Nữ",
+      "phone": "0963015535",
+      "birthday": "23/01/1973",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV031",
+      "name": "Dương Công Chi",
+      "gender": "Nữ",
+      "phone": "0993096126",
+      "birthday": "28/07/1971",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "Sinh Hoạt Lớp",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV032",
+      "name": "Trần Minh Nga",
+      "gender": "Nữ",
+      "phone": "0862347557",
+      "birthday": "19/11/1991",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "Sinh Hoạt Lớp",
+        "Tin Học",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "8A3"
+    },
+    {
+      "id": "GV033",
+      "name": "Nguyễn Thu Nhung",
+      "gender": "Nữ",
+      "phone": "0921650856",
+      "birthday": "17/04/1987",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "Tin Học",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "8A4"
+    },
+    {
+      "id": "GV034",
+      "name": "Đặng Xuân Thảo",
+      "gender": "Nữ",
+      "phone": "0865005353",
+      "birthday": "10/05/1971",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "GDCD",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "8A5"
+    },
+    {
+      "id": "GV035",
+      "name": "Hoàng Hữu Yến",
+      "gender": "Nữ",
+      "phone": "0960562449",
+      "birthday": "05/12/1975",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "Sinh Hoạt Lớp",
+        "GDCD",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "8A6"
+    },
+    {
+      "id": "GV036",
+      "name": "Ngô Thành Nam",
+      "gender": "Nam",
+      "phone": "0917486081",
+      "birthday": "09/03/1993",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "Sinh Hoạt Lớp",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "8A7"
+    },
+    {
+      "id": "GV037",
+      "name": "Lê Hữu Cường",
+      "gender": "Nam",
+      "phone": "0936206723",
+      "birthday": "20/03/1972",
+      "department": "Tiếng Anh",
+      "mainSubject": "Tiếng Anh",
+      "subjects": [
+        "Tiếng Anh",
+        "GDCD",
+        "Tin Học",
+        "Sinh Hoạt Lớp"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "9A1"
+    },
+    {
+      "id": "GV038",
+      "name": "Hoàng Thành Mai",
+      "gender": "Nữ",
+      "phone": "0912987511",
+      "birthday": "28/10/1992",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Vật Lý",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "9A2"
+    },
+    {
+      "id": "GV039",
+      "name": "Lê Văn Nhung",
+      "gender": "Nữ",
+      "phone": "0880200047",
+      "birthday": "05/12/1970",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Sinh Học",
+        "Vật Lý"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "9A3"
+    },
+    {
+      "id": "GV040",
+      "name": "Hoàng Hữu Hà",
+      "gender": "Nữ",
+      "phone": "0968789639",
+      "birthday": "24/07/1989",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Vật Lý",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV041",
+      "name": "Bùi Quốc Hương",
+      "gender": "Nữ",
+      "phone": "0948361166",
+      "birthday": "03/06/1971",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Vật Lý",
+      "subjects": [
+        "Vật Lý",
+        "Hóa Học",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "9A4"
+    },
+    {
+      "id": "GV042",
+      "name": "Lý Hồng Nhung",
+      "gender": "Nữ",
+      "phone": "0866511953",
+      "birthday": "12/08/1979",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Sinh Học",
+        "Vật Lý"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV043",
+      "name": "Hồ Minh Quỳnh",
+      "gender": "Nữ",
+      "phone": "0888363712",
+      "birthday": "03/09/1974",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Vật Lý",
+      "subjects": [
+        "Vật Lý",
+        "Hóa Học",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "9A5"
+    },
+    {
+      "id": "GV044",
+      "name": "Lý Đức Quỳnh",
+      "gender": "Nữ",
+      "phone": "0944044813",
+      "birthday": "08/05/1983",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Vật Lý",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "9A6"
+    },
+    {
+      "id": "GV045",
+      "name": "Đặng Hữu Nhung",
+      "gender": "Nữ",
+      "phone": "0986831149",
+      "birthday": "27/05/1978",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Vật Lý",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giáo viên chủ nhiệm"
+      ],
+      "homeroom": "9A7"
+    },
+    {
+      "id": "GV046",
+      "name": "Đặng Thu Trung",
+      "gender": "Nam",
+      "phone": "0913056273",
+      "birthday": "12/06/1973",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Vật Lý",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV047",
+      "name": "Dương Hữu Hùng",
+      "gender": "Nam",
+      "phone": "0999245330",
+      "birthday": "05/02/1987",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Vật Lý",
+      "subjects": [
+        "Vật Lý",
+        "Hóa Học",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV048",
+      "name": "Đỗ Đình Nga",
+      "gender": "Nữ",
+      "phone": "0913452906",
+      "birthday": "24/07/1988",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Vật Lý",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV049",
+      "name": "Bùi Đức Vinh",
+      "gender": "Nam",
+      "phone": "0913781151",
+      "birthday": "27/02/1971",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Vật Lý",
+      "subjects": [
+        "Vật Lý",
+        "Hóa Học",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV050",
+      "name": "Phan Hồng Tuấn",
+      "gender": "Nam",
+      "phone": "0886331851",
+      "birthday": "11/02/1978",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Hóa Học",
+      "subjects": [
+        "Hóa Học",
+        "Vật Lý",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV051",
+      "name": "Hồ Công Tài",
+      "gender": "Nam",
+      "phone": "0865844179",
+      "birthday": "04/04/1976",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Sinh Học",
+      "subjects": [
+        "Sinh Học",
+        "Hóa Học",
+        "Vật Lý"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV052",
+      "name": "Phan Như Quỳnh",
+      "gender": "Nữ",
+      "phone": "0943694587",
+      "birthday": "09/05/1983",
+      "department": "Khoa Học Tự Nhiên",
+      "mainSubject": "Vật Lý",
+      "subjects": [
+        "Vật Lý",
+        "Hóa Học",
+        "Sinh Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV053",
+      "name": "Phạm Công Cường",
+      "gender": "Nam",
+      "phone": "0863142112",
+      "birthday": "28/07/1974",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Địa Lý",
+      "subjects": [
+        "Địa Lý",
+        "GDCD",
+        "Lịch Sử"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV054",
+      "name": "Nguyễn Thu Chi",
+      "gender": "Nữ",
+      "phone": "0868711172",
+      "birthday": "05/04/1982",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Lịch Sử",
+      "subjects": [
+        "Lịch Sử",
+        "Địa Lý",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV055",
+      "name": "Nguyễn Thành Yến",
+      "gender": "Nữ",
+      "phone": "0904437100",
+      "birthday": "18/10/1986",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Địa Lý",
+      "subjects": [
+        "Địa Lý",
+        "GDCD",
+        "Lịch Sử"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV056",
+      "name": "Lý Thành Tài",
+      "gender": "Nam",
+      "phone": "0990537724",
+      "birthday": "03/11/1994",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Lịch Sử",
+      "subjects": [
+        "Lịch Sử",
+        "Địa Lý",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV057",
+      "name": "Phan Đức Ngọc",
+      "gender": "Nữ",
+      "phone": "0991670199",
+      "birthday": "10/04/1988",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "GDCD",
+      "subjects": [
+        "GDCD",
+        "Địa Lý",
+        "Lịch Sử"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV058",
+      "name": "Huỳnh Công Tài",
+      "gender": "Nam",
+      "phone": "0911412937",
+      "birthday": "09/05/1976",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Lịch Sử",
+      "subjects": [
+        "Lịch Sử",
+        "GDCD",
+        "Địa Lý"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV059",
+      "name": "Lý Công Linh",
+      "gender": "Nữ",
+      "phone": "0976995764",
+      "birthday": "23/08/1983",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Lịch Sử",
+      "subjects": [
+        "Lịch Sử",
+        "GDCD",
+        "Địa Lý"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV060",
+      "name": "Võ Công Khánh",
+      "gender": "Nam",
+      "phone": "0911653833",
+      "birthday": "27/08/1971",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Địa Lý",
+      "subjects": [
+        "Địa Lý",
+        "GDCD",
+        "Lịch Sử"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV061",
+      "name": "Phan Thành Khoa",
+      "gender": "Nam",
+      "phone": "0907931974",
+      "birthday": "16/01/1990",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Địa Lý",
+      "subjects": [
+        "Địa Lý",
+        "Lịch Sử",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV062",
+      "name": "Trần Thành Tài",
+      "gender": "Nam",
+      "phone": "0863532682",
+      "birthday": "11/08/1978",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Lịch Sử",
+      "subjects": [
+        "Lịch Sử",
+        "Địa Lý",
+        "GDCD"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV063",
+      "name": "Hồ Thành Quỳnh",
+      "gender": "Nữ",
+      "phone": "0970951932",
+      "birthday": "05/10/1975",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Địa Lý",
+      "subjects": [
+        "Địa Lý",
+        "GDCD",
+        "Lịch Sử"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV064",
+      "name": "Trần Hữu Thắng",
+      "gender": "Nam",
+      "phone": "0865354561",
+      "birthday": "20/01/1975",
+      "department": "Khoa Học Xã Hội",
+      "mainSubject": "Địa Lý",
+      "subjects": [
+        "Địa Lý",
+        "GDCD",
+        "Lịch Sử"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV065",
+      "name": "Phạm Minh Lan",
+      "gender": "Nữ",
+      "phone": "0861074870",
+      "birthday": "16/04/1990",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Âm Nhạc",
+        "Công Nghệ",
+        "Thể Dục"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV066",
+      "name": "Huỳnh Đình Giang",
+      "gender": "Nam",
+      "phone": "0973308092",
+      "birthday": "02/02/1971",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Mỹ Thuật",
+        "Âm Nhạc"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV067",
+      "name": "Huỳnh Thành Nhung",
+      "gender": "Nữ",
+      "phone": "0865778390",
+      "birthday": "04/10/1978",
+      "department": "Môn Phụ",
+      "mainSubject": "Công Nghệ",
+      "subjects": [
+        "Công Nghệ",
+        "Mỹ Thuật",
+        "Thể Dục",
+        "Âm Nhạc"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV068",
+      "name": "Ngô Minh Bình",
+      "gender": "Nam",
+      "phone": "0927403284",
+      "birthday": "20/10/1983",
+      "department": "Môn Phụ",
+      "mainSubject": "Công Nghệ",
+      "subjects": [
+        "Công Nghệ",
+        "Âm Nhạc",
+        "Thể Dục",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV069",
+      "name": "Bùi Quốc Tuấn",
+      "gender": "Nam",
+      "phone": "0919041191",
+      "birthday": "22/03/1985",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Công Nghệ",
+        "Thể Dục",
+        "Âm Nhạc",
+        "Mỹ Thuật"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV070",
+      "name": "Huỳnh Thành Anh",
+      "gender": "Nữ",
+      "phone": "0928908807",
+      "birthday": "28/02/1981",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Mỹ Thuật",
+        "Công Nghệ",
+        "Âm Nhạc",
+        "Thể Dục"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV071",
+      "name": "Phạm Hữu Toàn",
+      "gender": "Nam",
+      "phone": "0948658321",
+      "birthday": "04/04/1982",
+      "department": "Môn Phụ",
+      "mainSubject": "Thể Dục",
+      "subjects": [
+        "Thể Dục",
+        "Công Nghệ",
+        "Mỹ Thuật",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV072",
+      "name": "Đỗ Đình Hưng",
+      "gender": "Nam",
+      "phone": "0995904781",
+      "birthday": "16/03/1993",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Công Nghệ",
+        "Mỹ Thuật",
+        "Thể Dục",
+        "Âm Nhạc"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV073",
+      "name": "Đỗ Công Khoa",
+      "gender": "Nam",
+      "phone": "0979612193",
+      "birthday": "17/02/1981",
+      "department": "Môn Phụ",
+      "mainSubject": "Mỹ Thuật",
+      "subjects": [
+        "Mỹ Thuật",
+        "Âm Nhạc",
+        "Thể Dục",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV074",
+      "name": "Phan Minh Quân",
+      "gender": "Nam",
+      "phone": "0880543325",
+      "birthday": "21/09/1983",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Công Nghệ",
+        "Thể Dục",
+        "Mỹ Thuật",
+        "Âm Nhạc"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV075",
+      "name": "Nguyễn Thanh Hưng",
+      "gender": "Nam",
+      "phone": "0886047447",
+      "birthday": "04/12/1973",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Mỹ Thuật",
+        "Tin Học",
+        "Công Nghệ",
+        "Thể Dục"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV076",
+      "name": "Trần Đức Khánh",
+      "gender": "Nam",
+      "phone": "0906253192",
+      "birthday": "24/05/1982",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Thể Dục",
+        "Công Nghệ",
+        "Âm Nhạc"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV077",
+      "name": "Võ Như Tài",
+      "gender": "Nam",
+      "phone": "0992424774",
+      "birthday": "16/02/1982",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Mỹ Thuật",
+        "Công Nghệ",
+        "Tin Học",
+        "Thể Dục"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV078",
+      "name": "Đặng Hữu Vinh",
+      "gender": "Nam",
+      "phone": "0944322256",
+      "birthday": "26/02/1975",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Thể Dục",
+        "Mỹ Thuật",
+        "Tin Học",
+        "Công Nghệ"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV079",
+      "name": "Phan Văn Bình",
+      "gender": "Nam",
+      "phone": "0944040932",
+      "birthday": "17/09/1987",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Mỹ Thuật",
+        "Công Nghệ"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV080",
+      "name": "Huỳnh Đức Nhi",
+      "gender": "Nữ",
+      "phone": "0883210495",
+      "birthday": "18/11/1973",
+      "department": "Môn Phụ",
+      "mainSubject": "Công Nghệ",
+      "subjects": [
+        "Công Nghệ",
+        "Tin Học",
+        "Thể Dục",
+        "Mỹ Thuật"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV081",
+      "name": "Vũ Đình Chi",
+      "gender": "Nữ",
+      "phone": "0921934918",
+      "birthday": "18/12/1977",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Công Nghệ",
+        "Mỹ Thuật",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV082",
+      "name": "Huỳnh Đình Loan",
+      "gender": "Nữ",
+      "phone": "0961157190",
+      "birthday": "03/03/1985",
+      "department": "Môn Phụ",
+      "mainSubject": "Thể Dục",
+      "subjects": [
+        "Thể Dục",
+        "Mỹ Thuật",
+        "Công Nghệ",
+        "Âm Nhạc",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV083",
+      "name": "Bùi Như Nga",
+      "gender": "Nữ",
+      "phone": "0889988877",
+      "birthday": "04/09/1975",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Tin Học",
+        "Thể Dục",
+        "Công Nghệ"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV084",
+      "name": "Lê Thị Diệu",
+      "gender": "Nữ",
+      "phone": "0979456536",
+      "birthday": "10/04/1971",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Âm Nhạc",
+        "Công Nghệ",
+        "Thể Dục"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV085",
+      "name": "Đặng Đức Yến",
+      "gender": "Nữ",
+      "phone": "0860251197",
+      "birthday": "16/08/1992",
+      "department": "Môn Phụ",
+      "mainSubject": "Công Nghệ",
+      "subjects": [
+        "Công Nghệ",
+        "Tin Học",
+        "Mỹ Thuật",
+        "Thể Dục"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV086",
+      "name": "Đỗ Văn Mai",
+      "gender": "Nữ",
+      "phone": "0979890609",
+      "birthday": "17/07/1992",
+      "department": "Môn Phụ",
+      "mainSubject": "Công Nghệ",
+      "subjects": [
+        "Công Nghệ",
+        "Tin Học",
+        "Âm Nhạc",
+        "Thể Dục",
+        "Mỹ Thuật"
+      ],
+      "roles": [
+        "Giáo viên bộ môn",
+        "Giám thị"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV087",
+      "name": "Huỳnh Hồng Ngọc",
+      "gender": "Nữ",
+      "phone": "0916112556",
+      "birthday": "04/12/1973",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Thể Dục",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV088",
+      "name": "Lê Minh Hưng",
+      "gender": "Nam",
+      "phone": "0906717864",
+      "birthday": "06/10/1978",
+      "department": "Môn Phụ",
+      "mainSubject": "Âm Nhạc",
+      "subjects": [
+        "Âm Nhạc",
+        "Tin Học",
+        "Công Nghệ",
+        "Thể Dục",
+        "Mỹ Thuật"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV089",
+      "name": "Đỗ Đình Nhi",
+      "gender": "Nữ",
+      "phone": "0887128498",
+      "birthday": "11/07/1986",
+      "department": "Môn Phụ",
+      "mainSubject": "Công Nghệ",
+      "subjects": [
+        "Công Nghệ",
+        "Tin Học",
+        "Thể Dục",
+        "Mỹ Thuật"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV090",
+      "name": "Trần Đình Cường",
+      "gender": "Nam",
+      "phone": "0865692603",
+      "birthday": "16/04/1973",
+      "department": "Môn Phụ",
+      "mainSubject": "Tin Học",
+      "subjects": [
+        "Tin Học",
+        "Công Nghệ",
+        "Mỹ Thuật",
+        "Âm Nhạc"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    },
+    {
+      "id": "GV091",
+      "name": "Hoàng Công Bình",
+      "gender": "Nam",
+      "phone": "0970312597",
+      "birthday": "28/05/1988",
+      "department": "Môn Phụ",
+      "mainSubject": "Mỹ Thuật",
+      "subjects": [
+        "Mỹ Thuật",
+        "Âm Nhạc",
+        "Tin Học"
+      ],
+      "roles": [
+        "Giáo viên bộ môn"
+      ],
+      "homeroom": null
+    }
+  ]
+}

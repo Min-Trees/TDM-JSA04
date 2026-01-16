@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Hàng Ngon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nhà Hàng Ngon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Thực đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Đặt bàn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Chào Mừng Đến Nhà Hàng Ngon</h1>
+            <p>Trải nghiệm ẩm thực tuyệt vời với các món ăn đặc sắc</p>
+            <a href="#booking" class="btn btn-primary">Đặt Bàn Ngay</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Thực Đơn Của Chúng Tôi</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Salad">
+                    <div class="menu-item-content">
+                        <h3>Salad Tươi</h3>
+                        <p>Rau xanh tươi mát với sốt đặc biệt</p>
+                        <span class="price">120.000đ</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza">
+                    <div class="menu-item-content">
+                        <h3>Pizza Đặc Biệt</h3>
+                        <p>Pizza với phô mai và nhân hải sản</p>
+                        <span class="price">250.000đ</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="Pasta">
+                    <div class="menu-item-content">
+                        <h3>Mì Ý Sốt Kem</h3>
+                        <p>Mì Ý truyền thống với sốt kem béo ngậy</p>
+                        <span class="price">180.000đ</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400" alt="Soup">
+                    <div class="menu-item-content">
+                        <h3>Súp Hải Sản</h3>
+                        <p>Súp nóng hổi với hải sản tươi ngon</p>
+                        <span class="price">150.000đ</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400" alt="Burger">
+                    <div class="menu-item-content">
+                        <h3>Burger Bò</h3>
+                        <p>Burger với thịt bò Úc cao cấp</p>
+                        <span class="price">200.000đ</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400" alt="Dessert">
+                    <div class="menu-item-content">
+                        <h3>Bánh Tiramisu</h3>
+                        <p>Bánh ngọt Ý truyền thống</p>
+                        <span class="price">100.000đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Đặt Bàn</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Họ và Tên *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Ngày *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Giờ *</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Số Lượng Khách *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Chọn số lượng</option>
+                        <option value="1">1 người</option>
+                        <option value="2">2 người</option>
+                        <option value="3">3 người</option>
+                        <option value="4">4 người</option>
+                        <option value="5">5 người</option>
+                        <option value="6+">6+ người</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Ghi Chú</label>
+                    <input type="text" id="notes" name="notes" placeholder="Yêu cầu đặc biệt...">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Xác Nhận Đặt Bàn</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xác Nhận Thông Tin Đặt Bàn</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="booking-summary" id="bookingSummary"></div>
+                    <p class="text-muted">Vui lòng kiểm tra lại thông tin trước khi xác nhận.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chỉnh Sửa</button>
+                    <button type="button" class="btn btn-primary" id="confirmBooking">Xác Nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Nhà Hàng Ngon. Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+            <p>Điện thoại: 0123 456 789 | Email: info@nhahangngon.vn</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

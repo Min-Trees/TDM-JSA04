@@ -1,0 +1,52 @@
+{
+        "Soft_drink": [
+        {
+            "id": 1,
+            "name": "ALOE VERA DRINKS",
+            "price": 50000,
+            "images": [
+                "assest/img/Soft_drink/aloe/aloe.jpg",
+                "assest/img/Soft_drink/aloe/aloe6.jpg",
+                "assest/img/Soft_drink/aloe/aloe1.jpg",
+                "assest/img/Soft_drink/aloe/aloe3.jpg"
+            ],
+            "description": "Aloe vera drink: bí ẩn trong mỗi giọt thanh mát."
+        },
+        {
+            "id": 2,
+            "name": "ENERGY DRINKS",
+            "price": 30000,
+            "images": [
+                "assest/img/Soft_drink/ener/e.jpg",
+                "assest/img/Soft_drink/ener/e6.jpg",
+                "assest/img/Soft_drink/ener/e1.jpg",
+                "assest/img/Soft_drink/ener/e3.jpg"
+            ],
+            "description": "TROPICAL SKY – năng lượng bùng nổ, vị nhiệt đới, uống là thấy “phiêu”."
+        },
+        {
+            "id": 3,
+            "name": "COCONUT MILK DRINKS",
+            "price": 36000,
+            "images": [
+                "assest/img/Soft_drink/coco/coco.jpg",
+                "assest/img/Soft_drink/coco/coco1.jpg",
+                "assest/img/Soft_drink/coco/coco3.jpg",
+                "assest/img/Soft_drink/coco/coco6.jpg"
+            ],
+            "description": "Coconut Milk Drinks – mịn màng, béo nhẹ, uống là mê."
+        },
+        {
+            "id": 4,
+            "name": "SPARKLING JUICE DRINKS",
+            "price": 31000,
+            "images": [
+                "assest/img/Soft_drink/juice/j.jpg",
+                "assest/img/Soft_drink/juice/j1.jpg",
+                "assest/img/Soft_drink/juice/j3.jpg",
+                "assest/img/Soft_drink/juice/j6.jpg"
+            ],
+            "description": "Một ngụm sủi bọt, vị trái cây bùng nổ, khó cưỡng lại."
+        }
+    ]
+}
