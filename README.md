@@ -77,10 +77,10 @@ TDM-JSA04/
 ├── styles.css          # CSS styles
 ├── script.js           # JavaScript
 ├── README.md           # Hướng dẫn
-├── Hồng Minh/          # Dự án của Hồng Minh
-├── Nhật Nam/           # Dự án của Nhật Nam
-├── Thiên Phúc/         # Dự án của Thiên Phúc
-└── Tuấn Anh/           # Dự án của Tuấn Anh
+├── HongMinh/           # Dự án của Hồng Minh
+├── NhatNam/            # Dự án của Nhật Nam
+├── ThienPhuc/          # Dự án của Thiên Phúc
+└── TuanAnh/            # Dự án của Tuấn Anh
 ```
 
 ## ✨ Tính năng trang chính
